@@ -115,6 +115,9 @@ false]]></screen>
         <para>
             Tanulságok, tapasztalatok, magyarázat...
         </para>
+        <para>
+            Elkészíteni egy olyan programot, amely meg tudja nézni, hogy egy másik program lefagy-e (végtelen-e) nem lehetséges, mivel olyan kód nem létezik, amely egy másik program végtelen ciklusát "megelőzve" annak a végére érhetne, és valósan kimondhatná, hogy igen, ez egy olyan program, ami lefagyott (végtelen ciklus).
+        </para>
     </section>        
                 
     <section>
@@ -148,13 +151,16 @@ false]]></screen>
             Megoldás forrása:
         </para>
         <para>
-            <link xlink:href="https://github.com/pkristof1999/prog1/edit/master/Feladatok/labdapattogtatas.c"> Labdapattogtatás.</link>
+            <link xlink:href="https://github.com/pkristof1999/prog1/edit/master/Feladatok/labdapattogtatas.c"> Labdapattogtatás if-fel.</link>
+        </para>
+        <para>
+            <link xlink:href="https://github.com/pkristof1999/prog1/blob/master/Feladatok/labdapattogtatas_2.c"> Labdapattogtatás if nélkül.</link>
         </para>
         <para>
             Tanulságok, tapasztalatok, magyarázat...
         </para>
         <para>
-            Labdapattogtatásnál szükségünk van egy új ablak megnyitásához, az ablak méretének lekérdezéséhez, ahhoz hogy hol jár épp a labda és egy kezdőértékhez. A For cikluson belül valósul meg, hogy a program a "getmaxyx" segítségével lekérdezi az ablak méretét, az "mvprintw" függvény kirajzolja a labdát, majd az if elágazásoknál nézi a program, hogy mennyit kell adni a változókhoz.
+            Az if-es labdapattogtatásnál szükségünk van egy új ablak megnyitásához, az ablak méretének lekérdezéséhez, ahhoz hogy hol jár épp a labda és egy kezdőértékhez. A For cikluson belül valósul meg, hogy a program a "getmaxyx" segítségével lekérdezi az ablak méretét, az "mvprintw" függvény kirajzolja a labdát, majd az if elágazásoknál nézi a program, hogy mennyit kell adni a változókhoz. Az if nélküli labdapattogtatásnál 
         </para>
     </section>                     
 
@@ -185,10 +191,7 @@ false]]></screen>
             értékét!
         </para>
         <para>
-            Megoldás videó: <link xlink:href=""></link>
-        </para>
-        <para>
-            Megoldás forrása: <link xlink:href=""></link>
+            Megoldás forrása: <link xlink:href="https://github.com/pkristof1999/prog1/blob/master/Feladatok/pagerank.c"> Page-Rank. </link>
         </para>
         <para>
             Tanulságok, tapasztalatok, magyarázat...
