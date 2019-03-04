@@ -12,25 +12,22 @@
             100 százalékban minden magot!
         </para>
         <para>
-            Megoldás videó:
-        </para>
-        <para>
             Megoldás forrása:
         </para>
             <para>
-            <link xlink:href="https://github.com/pkristof1999/prog1/blob/master/mind_100.c"> Minden szál 100%-on. </link>
+            <link xlink:href="https://github.com/pkristof1999/prog1/blob/master/Feladatok/mind_100.c"> Minden szál 100%-on. </link>
             </para>
             <para>
-            <link xlink:href="https://github.com/pkristof1999/prog1/blob/master/egy_100.c"> Egy szál 100%-on. </link>
+            <link xlink:href="https://github.com/pkristof1999/prog1/blob/master/Feladatok/egy_100.c"> Egy szál 100%-on. </link>
             </para>           
             <para>
-            <link xlink:href="https://github.com/pkristof1999/prog1/blob/master/0.c"> Egy szál altatása. </link>
+            <link xlink:href="https://github.com/pkristof1999/prog1/blob/master/Feladatok/0.c"> Egy szál altatása. </link>
             </para>
         <para>
             Tanulságok, tapasztalatok, magyarázat...
         </para>
             <para>
-            Egy mag futtatása 100%-on egy egyszerű üres ciklussal megtehető. Több magnál a végtelen cikluson felül szükség van 
+            Egy mag futtatása 100%-on egy egyszerű üres ciklussal megtehető. Több magnál a végtelen cikluson felül szükség van az OpenMP meghívására és fordításnál pedig az "-fopenmp" parancsra. Altatásnál ciklusban a Sleep() függvényre van szükség, amihez meg kell hívni az unistd.h könyvtárat.
             </para>            
     </section>        
         
@@ -127,13 +124,16 @@ false]]></screen>
             nasználata nélkül!
         </para>
         <para>
-            Megoldás videó: <link xlink:href="https://bhaxor.blog.hu/2018/08/28/10_begin_goto_20_avagy_elindulunk">https://bhaxor.blog.hu/2018/08/28/10_begin_goto_20_avagy_elindulunk</link>
+            Megoldás forrása:
         </para>
         <para>
-            Megoldás forrása:  
+            <link xlink:href="https://github.com/pkristof1999/prog1/blob/master/Feladatok/valtozocsere.c"> Változók felcserélése. </link>
         </para>
         <para>
             Tanulságok, tapasztalatok, magyarázat...
+        </para>
+        <para>
+            Változók cseréjénél a felhasználótól 2 darab egész számot bekérünk, majd egy egyszerű összeadás/kivonás sorozattal ezeket megcseréljük, majd kiíratjuk.
         </para>
     </section>                     
 
@@ -145,13 +145,16 @@ false]]></screen>
             pattogtatás alatt, alább láthatod a videókon.)
         </para>
         <para>
-            Megoldás videó: <link xlink:href="https://bhaxor.blog.hu/2018/08/28/labdapattogas">https://bhaxor.blog.hu/2018/08/28/labdapattogas</link>
+            Megoldás forrása:
         </para>
         <para>
-            Megoldás forrása:  
+            <link xlink:href="https://github.com/pkristof1999/prog1/edit/master/Feladatok/labdapattogtatas.c"> Labdapattogtatás.</link>
         </para>
         <para>
             Tanulságok, tapasztalatok, magyarázat...
+        </para>
+        <para>
+            Labdapattogtatásnál szükségünk van egy új ablak megnyitásához, az ablak méretének lekérdezéséhez, ahhoz hogy hol jár épp a labda és egy kezdőértékhez. A For cikluson belül valósul meg, hogy a program a "getmaxyx" segítségével lekérdezi az ablak méretét, az "mvprintw" függvény kirajzolja a labdát, majd az if elágazásoknál nézi a program, hogy mennyit kell adni a változókhoz.
         </para>
     </section>                     
 
@@ -162,13 +165,16 @@ false]]></screen>
             Használd ugyanazt a while ciklus fejet, amit Linus Torvalds a BogoMIPS rutinjában! 
         </para>
         <para>
-            Megoldás videó: <link xlink:href=""></link>
+            Megoldás forrása:
         </para>
         <para>
-            Megoldás forrása: <link xlink:href=""></link>
+             <link xlink:href="https://github.com/pkristof1999/prog1/blob/master/Feladatok/szohossz.c"> Szóhossz. </link>
         </para>
         <para>
             Tanulságok, tapasztalatok, magyarázat... 
+        </para>
+        <para>
+            
         </para>
     </section>                     
 
