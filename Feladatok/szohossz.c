@@ -9,7 +9,7 @@ int main(void)
 	++x;
 	}while(y<<=1);
 	printf("The wordlenght on this computer is: ");
-	printf("%d",y);
+	printf("%d",x);
 	printf(" bits.\n");
 	return 0;
 }
