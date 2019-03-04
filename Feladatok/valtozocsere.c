@@ -5,18 +5,18 @@ int main()
 {
 	
 	printf("Adjon meg két egész számot!\n");
-	int x;
-	int y;
-	scanf("%d",&x);
-	scanf("%d",&y);
+	int a;
+	int b;
+	scanf("%d",&a);
+	scanf("%d",&b);
 	printf("\nAz számok felcserélve:\n");	
 	
-	x = x - y;
-	y = y + x;
-	x = y - x;
+	a = a + b; //a = a + b
+	b = a - b; //b = (a + b) - b = a
+	a = a - b; //a = (a + b) - a = b
 
-	printf("%d",x);
+	printf("%d",a);
 	printf("\n");
-	printf("%d",y);
+	printf("%d",b);
 	printf("\n");
 }
