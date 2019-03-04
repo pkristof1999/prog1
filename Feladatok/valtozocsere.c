@@ -9,7 +9,7 @@ int main()
 	int b;
 	scanf("%d",&a);
 	scanf("%d",&b);
-	printf("\nAz számok felcserélve:\n");	
+	printf("\nA számok felcserélve:\n");	
 	
 	a = a + b; //a = a + b
 	b = a - b; //b = (a + b) - b = a
