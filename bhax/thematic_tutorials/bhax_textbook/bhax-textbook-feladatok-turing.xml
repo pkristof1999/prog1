@@ -160,7 +160,7 @@ false]]></screen>
             Tanulságok, tapasztalatok, magyarázat...
         </para>
         <para>
-            Az if-es labdapattogtatásnál szükségünk van egy új ablak megnyitásához, az ablak méretének lekérdezéséhez, ahhoz hogy hol jár épp a labda és egy kezdőértékhez. A For cikluson belül valósul meg, hogy a program a "getmaxyx" segítségével lekérdezi az ablak méretét, az "mvprintw" függvény kirajzolja a labdát, majd az if elágazásoknál nézi a program, hogy mennyit kell adni a változókhoz. Az if nélküli labdapattogtatásnál 
+            Az if-es labdapattogtatásnál szükségünk van egy új ablak megnyitásához, az ablak méretének lekérdezéséhez, ahhoz hogy hol jár épp a labda és egy kezdőértékhez. A For cikluson belül valósul meg, hogy a program a "getmaxyx" segítségével lekérdezi az ablak méretét, az "mvprintw" függvény kirajzolja a labdát, majd az if elágazásoknál nézi a program, hogy mennyit kell adni a változókhoz. Az if nélküli labdapattogtatásnál előre megadott pályamérettel dolgozunk, tömbök és for ciklusok segítségével nézzük, hogy mikor éri el a labda a pálya szélét, és függően attól, hogy melyik oldalt éri el, úgy vált x vagy y plusz előjelről negatívra, amellyel az irányváltoztatás létrejön.
         </para>
     </section>                     
 
@@ -180,7 +180,7 @@ false]]></screen>
             Tanulságok, tapasztalatok, magyarázat... 
         </para>
         <para>
-            
+            (Ratku Dániel segítségével) Ebben a feladatban az int típusnak a Bitwise operátorral megkapott értékét kell kiszámolnunk. Itt két különböző int-tel dolgozunk, az egyik értéke 0, a másik pedig 0x01, egy do-while ciklus segítségével a 0 értékű változót folyamatosan növeljük eggyel, egészen addig, amíg el nem érjük a 0x01 változót left shifteléssel.
         </para>
     </section>                     
 
@@ -191,10 +191,13 @@ false]]></screen>
             értékét!
         </para>
         <para>
-            Megoldás forrása: <link xlink:href="https://github.com/pkristof1999/prog1/blob/master/Feladatok/pagerank.c"> Page-Rank. </link>
+            Megoldás forrása: <link xlink:href="https://github.com/pkristof1999/prog1/blob/master/Feladatok/pagerank.c"> PageRank. </link>
         </para>
         <para>
             Tanulságok, tapasztalatok, magyarázat...
+        </para>
+        <para>
+            A PageRank nevezetű algoritmus a Google-höz kapcsolódik. Célja az, hogy azok a weboldalak, amelyekre több kattintás gyűlik össze, előrébb kerüljenek a ranglistán arra alapozva, hogy valószínűleg érdekesebb és relevánsabb tartalom van bennük, tehát a weboldalak "jóságát" veszi figyelembe. A program egy egyszerű 4 weboldalas esetet mutat be mátrixokkal és vektorokkal, habár még teljes mértékben nem látom át, ezért még nem tudom részletezni a kód jelentését.
         </para>
     </section>
 
@@ -204,10 +207,13 @@ false]]></screen>
             Írj R szimulációt a Brun tétel demonstrálására!
         </para>
         <para>
-            Megoldás videó: <link xlink:href="https://youtu.be/xbYhp9G6VqQ">https://youtu.be/xbYhp9G6VqQ</link>
+            Megoldás forrása: <link xlink:href="https://github.com/pkristof1999/prog1/blob/master/Feladatok/bt.r">Brun Tétel.</link>
         </para>
         <para>
-            Megoldás forrása: <link xlink:href="https://gitlab.com/nbatfai/bhax/blob/master/attention_raising/Primek_R">https://gitlab.com/nbatfai/bhax/blob/master/attention_raising/Primek_R</link>
+            Tanulságok, tapasztalatok, magyarázat...
+        </para>
+        <para>
+            (Ratku Dániel segítségével) A Brun tétel azt mondja ki, hogy az olyan egymást követő prímek, amelyek különbsége kettő, azoknak a reciprokösszege nem a végtelenbe, hanem egy ún. Brun konstanshoz tart. A programon belül deklaráljuk x-ig a prímszámokat 1-től, illetve 2-től is. Külön felvesszük azt a változót, amely azokat a prímeket gyűjti ki, amelyeknek a különbsége kettő, majd ezeket eltároljuk. Az eltárolt prímeknek vesszük a reciprokösszegét, majd az összeset összeadjuk egy változóba. Majd a matlab könyvtár segítségével ezt meg is jeleníthetjük.
         </para>
     </section>
     
@@ -217,13 +223,13 @@ false]]></screen>
             Írj R szimulációt a Monty Hall problémára!
         </para>
         <para>
-            Megoldás videó: <link xlink:href="https://bhaxor.blog.hu/2019/01/03/erdos_pal_mit_keresett_a_nagykonyvben_a_monty_hall-paradoxon_kapcsan">https://bhaxor.blog.hu/2019/01/03/erdos_pal_mit_keresett_a_nagykonyvben_a_monty_hall-paradoxon_kapcsan</link>
-        </para>
-        <para>
-            Megoldás forrása: <link xlink:href="https://gitlab.com/nbatfai/bhax/tree/master/attention_raising/MontyHall_R">https://gitlab.com/nbatfai/bhax/tree/master/attention_raising/MontyHall_R</link>
+            Megoldás forrása: <link xlink:href="https://github.com/pkristof1999/prog1/blob/master/Feladatok/mh.r">Monty Hall probléma.</link>
         </para>
         <para>
             Tanulságok, tapasztalatok, magyarázat...
+        </para>
+        <para>
+           (Ratku Dániel segítségével) A feladat szituációja a következő, adott egy játékos és egy műsorvezető, plusz 3 ajtó, amelyből 2 vereséget és 1 nyereséget rejt. Ezek a "jutalmak" ajtók mögé vannak rejtve és a felhasználónak kell egyet kiválasztania a lehetőségek közül. A feladat során feltételezzük, hogy a műsorvezető pontosan tudja a győztes ajtó számát. A műsornak a felépítése olyan, hogy a játékosnak választania kell egy ajtót, majd a műsort levezető személynek választania kell a választott ajtótól egy különbözőt, amely nem tartalmazza a jutalmat. A probléma abban rejlik, hogy eredetileg 1/3-ad az esély a győzelemre, viszont miután a műsorvezető kinyitja az általunk választottól különböző ajtót, azt feltételezzük, hogy azért azt választotta, mert nem abban van a nyeremény, ezáltal pedig a győzelmi esélyünk már 2/3-ra nőtt. A kódunkban bármekkora számmal hozhatjuk létre a kísérletek számát, majd ezután deklaráljuk a kísérletek és játékosok nevezetű változót, amelyben ott van a lehetőségek száma és mellékeljük a replace=T -t, ami engedélyezi ezeknek az ismétlődését. A műsorvezető egy vektor lesz, aminek a hossza megegyezik a kísérletek számával, a műsor folyását egy for ciklussal kezdjük, ami átmegy az összes kísérleten, majd a beleépített if elágazásokkal megvizsgáljuk, hogy mit választott a játékos. Az eredeti ágnál megegyezik a játékos tippje a helyes ajtóval, ekkor a műsorvezető kivonja a 3 lehetőség közül azt amelyiket választott a játékos, egyéb esetben a házigazda már csak azt az ajtót tudja kiválasztani, ami mögött nem a jutalom van. Következő lépésben meghatározunk 2 esetet, az egyik amikor a játékos változtat, a másik amikor nem. Az utóbbi esetén a tipp megegyezik a győzelemmel. A következő for ciklus a változtatás esetén zajlik, amikor már arra az ajtóra váltunk, ami mögött a problémából adódóan feltételezzük a jutalom hollétét. Legvégül pedig kiíratjuk a kísérletek számát.
         </para>
     </section>
 

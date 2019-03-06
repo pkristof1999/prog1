@@ -34,4 +34,28 @@
             Aktualizálás, javítások.
         </revremark>
     </revision>
+    <revision>
+        <revnumber>0.0.5</revnumber>
+        <date>2019-03-01</date>
+        <authorinitials>pkristof1999</authorinitials>
+        <revremark>
+            Munka elkezdése, adatok bevitele a szerzőkhöz. Touring csokor első 3 feladatának megoldása. Saját repository-ba való feltöltés.
+        </revremark>
+    </revision>
+    <revision>
+        <revnumber>0.0.6</revnumber>
+        <date>2019-03-04</date>
+        <authorinitials>pkristof1999</authorinitials>
+        <revremark>
+            Touring csokor következő 4 feladatának megoldása, első 3 finomítása, utolsó megnézése.
+        </revremark>
+    </revision>
+    <revision>
+    <revnumber>0.0.7</revnumber>
+        <date>2019-03-05</date>
+        <authorinitials>pkristof1999</authorinitials>
+        <revremark>
+            Touring csokor befejezése. Chomsky csokor feladatainak tanulmányozása.
+        </revremark>
+    </revision>
 </revhistory>
