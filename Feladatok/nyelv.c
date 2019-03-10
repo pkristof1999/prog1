@@ -1,4 +1,4 @@
-//C89-ben megírt kódcsipet
+//C89-ben megÃ­rt kÃ³dcsipet
 /*
 #include <stdio.h>
 #include <stdlib.h>
@@ -10,9 +10,9 @@ int main()
 		printf("C89\n");
 		}
 	return 0;
-}
-*/
-//C99-ben megírt kódcsipet
+}*/
+
+//C99-ben megÃ­rt kÃ³dcsipet
 /*
 #include <stdio.h>
 #include <stdlib.h>
