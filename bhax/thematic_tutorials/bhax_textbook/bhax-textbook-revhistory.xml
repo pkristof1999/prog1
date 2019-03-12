@@ -58,4 +58,20 @@
             Touring csokor befejezése. Chomsky csokor feladatainak tanulmányozása.
         </revremark>
     </revision>
+    <revision>
+    <revnumber>0.0.8</revnumber>
+        <date>2019-03-08</date>
+        <authorinitials>pkristof1999</authorinitials>
+        <revremark>
+            Chomsky csokor kidolgozásának megkezdése.
+        </revremark>
+    </revision>
+    <revision>
+    <revnumber>0.0.9</revnumber>
+        <date>2019-03-011</date>
+        <authorinitials>pkristof1999</authorinitials>
+        <revremark>
+            Chomsky csokor kidolgozásának felfüggesztése/befejezése.
+        </revremark>
+    </revision>
 </revhistory>
