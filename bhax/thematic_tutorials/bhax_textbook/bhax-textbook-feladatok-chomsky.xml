@@ -14,7 +14,7 @@
             Megoldás forrása:                
         </para>
         <para>
-            <link xlink:href="https://github.com/pkristof1999/prog1/blob/master/Feladatok/atvalto.c">Unárisba váltó.</link>
+            <link xlink:href="https://github.com/pkristof1999/prog1/blob/master/Feladatok/atvalto.c">Unárisba váltó</link>
         </para>
         <para>
             Tanulságok, tapasztalatok, magyarázat...
@@ -64,7 +64,7 @@
             Megoldás forrása:
         </para>
         <para>
-            <link xlink:href="https://github.com/pkristof1999/prog1/blob/master/Feladatok/elemzo.l">Lexikális elemző.</link>
+            <link xlink:href="https://github.com/pkristof1999/prog1/blob/master/Feladatok/elemzo.l">Lexikális elemző</link>
         </para>
         <para>
             Tanulságok, tapasztalatok, magyarázat...
@@ -83,7 +83,7 @@
             Megoldás forrása:
         </para>
         <para>
-            <link xlink:href="https://github.com/pkristof1999/prog1/blob/master/Feladatok/leetspeak.l">Leetspeak.</link>
+            <link xlink:href="https://github.com/pkristof1999/prog1/blob/master/Feladatok/leetspeak.l">Leetspeak</link>
         </para> 
         <para>
             Tanulságok, tapasztalatok, magyarázat...
@@ -167,18 +167,15 @@
             Hogyan olvasod természetes nyelven az alábbi Ar nyelvű formulákat?
         </para>
         <programlisting language="tex"><![CDATA[$(\forall x \exists y ((x<y)\wedge(y \text{ prím})))$ 
-
 $(\forall x \exists y ((x<y)\wedge(y \text{ prím})\wedge(SSy \text{ prím})))$ 
-
 $(\exists y \forall x (x \text{ prím}) \supset (x<y)) $ 
-
 $(\exists y \forall x (y<x) \supset \neg (x \text{ prím}))$
 ]]></programlisting>        
         <para>
             Megoldás forrása:
         </para>
         <para>
-            <link xlink:href="https://github.com/pkristof1999/prog1/blob/master/Feladatok/matlog.tex">Logikus.</link>
+            <link xlink:href="https://github.com/pkristof1999/prog1/blob/master/Feladatok/matlog.tex">Logikus</link>
         </para>
         <para>
             Tanulságok, tapasztalatok, magyarázat...
@@ -280,7 +277,7 @@ $(\exists y \forall x (y<x) \supset \neg (x \text{ prím}))$
             Megoldás forrása:  
         </para>
         <para>
-            <link xlink:href="https://github.com/pkristof1999/prog1/blob/master/Feladatok/declar.c">Deklaráció.</link>
+            <link xlink:href="https://github.com/pkristof1999/prog1/blob/master/Feladatok/declar.c">Deklaráció</link>
         </para>
         <para>
             Tanulságok, tapasztalatok, magyarázat...

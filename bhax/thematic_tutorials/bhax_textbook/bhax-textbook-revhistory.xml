@@ -68,10 +68,34 @@
     </revision>
     <revision>
     <revnumber>0.0.9</revnumber>
-        <date>2019-03-011</date>
+        <date>2019-03-11</date>
         <authorinitials>pkristof1999</authorinitials>
         <revremark>
             Chomsky csokor kidolgozásának felfüggesztése/befejezése.
+        </revremark>
+    </revision>
+    <revision>
+    <revnumber>0.1.0</revnumber>
+        <date>2019-03-15</date>
+        <authorinitials>pkristof1999</authorinitials>
+        <revremark>
+            Caesar csokor elkezdése.
+        </revremark>
+    </revision>
+    <revision>
+    <revnumber>0.1.1</revnumber>
+        <date>2019-03-17</date>
+        <authorinitials>pkristof1999</authorinitials>
+        <revremark>
+            Caesar csokor feladatainak további tanulmányozása, megoldása.
+        </revremark>
+    </revision>
+    <revision>
+    <revnumber>0.1.2</revnumber>
+        <date>2019-03-18</date>
+        <authorinitials>pkristof1999</authorinitials>
+        <revremark>
+            Ceaser csokor befejezése legjobb tudás szerint.
         </revremark>
     </revision>
 </revhistory>

@@ -15,13 +15,13 @@
             Megoldás forrása:
         </para>
             <para>
-            <link xlink:href="https://github.com/pkristof1999/prog1/blob/master/Feladatok/mind_100.c"> Minden szál 100%-on. </link>
+            <link xlink:href="https://github.com/pkristof1999/prog1/blob/master/Feladatok/mind_100.c"> Minden szál 100%-on </link>
             </para>
             <para>
-            <link xlink:href="https://github.com/pkristof1999/prog1/blob/master/Feladatok/egy_100.c"> Egy szál 100%-on. </link>
+            <link xlink:href="https://github.com/pkristof1999/prog1/blob/master/Feladatok/egy_100.c"> Egy szál 100%-on </link>
             </para>           
             <para>
-            <link xlink:href="https://github.com/pkristof1999/prog1/blob/master/Feladatok/0.c"> Egy szál altatása. </link>
+            <link xlink:href="https://github.com/pkristof1999/prog1/blob/master/Feladatok/0.c"> Egy szál altatása </link>
             </para>
         <para>
             Tanulságok, tapasztalatok, magyarázat...
@@ -35,9 +35,6 @@
         <title>Lefagyott, nem fagyott, akkor most mi van?</title>
         <para>
             Mutasd meg, hogy nem lehet olyan programot írni, amely bármely más programról eldönti, hogy le fog-e fagyni vagy sem!
-        </para>
-        <para>
-            Megoldás videó:
         </para>
         <para>
             Megoldás forrása:  tegyük fel, hogy akkora haxorok vagyunk, hogy meg tudjuk írni a <function>Lefagy</function>
@@ -130,7 +127,7 @@ false]]></screen>
             Megoldás forrása:
         </para>
         <para>
-            <link xlink:href="https://github.com/pkristof1999/prog1/blob/master/Feladatok/valtozocsere.c"> Változók felcserélése. </link>
+            <link xlink:href="https://github.com/pkristof1999/prog1/blob/master/Feladatok/valtozocsere.c"> Változók felcserélése </link>
         </para>
         <para>
             Tanulságok, tapasztalatok, magyarázat...
@@ -151,10 +148,10 @@ false]]></screen>
             Megoldás forrása:
         </para>
         <para>
-            <link xlink:href="https://github.com/pkristof1999/prog1/edit/master/Feladatok/labdapattogtatas.c"> Labdapattogtatás if-fel.</link>
+            <link xlink:href="https://github.com/pkristof1999/prog1/edit/master/Feladatok/labdapattogtatas.c"> Labdapattogtatás if-fel</link>
         </para>
         <para>
-            <link xlink:href="https://github.com/pkristof1999/prog1/blob/master/Feladatok/labdapattogtatas_2.c"> Labdapattogtatás if nélkül.</link>
+            <link xlink:href="https://github.com/pkristof1999/prog1/blob/master/Feladatok/labdapattogtatas_2.c"> Labdapattogtatás if nélkül</link>
         </para>
         <para>
             Tanulságok, tapasztalatok, magyarázat...
@@ -174,7 +171,7 @@ false]]></screen>
             Megoldás forrása:
         </para>
         <para>
-             <link xlink:href="https://github.com/pkristof1999/prog1/blob/master/Feladatok/szohossz.c"> Szóhossz. </link>
+             <link xlink:href="https://github.com/pkristof1999/prog1/blob/master/Feladatok/szohossz.c"> Szóhossz </link>
         </para>
         <para>
             Tanulságok, tapasztalatok, magyarázat... 
@@ -191,7 +188,7 @@ false]]></screen>
             értékét!
         </para>
         <para>
-            Megoldás forrása: <link xlink:href="https://github.com/pkristof1999/prog1/blob/master/Feladatok/pagerank.c"> PageRank. </link>
+            Megoldás forrása: <link xlink:href="https://github.com/pkristof1999/prog1/blob/master/Feladatok/pagerank.c"> PageRank </link>
         </para>
         <para>
             Tanulságok, tapasztalatok, magyarázat...
@@ -207,7 +204,7 @@ false]]></screen>
             Írj R szimulációt a Brun tétel demonstrálására!
         </para>
         <para>
-            Megoldás forrása: <link xlink:href="https://github.com/pkristof1999/prog1/blob/master/Feladatok/bt.r">Brun Tétel.</link>
+            Megoldás forrása: <link xlink:href="https://github.com/pkristof1999/prog1/blob/master/Feladatok/bt.r">Brun Tétel</link>
         </para>
         <para>
             Tanulságok, tapasztalatok, magyarázat...
@@ -223,7 +220,7 @@ false]]></screen>
             Írj R szimulációt a Monty Hall problémára!
         </para>
         <para>
-            Megoldás forrása: <link xlink:href="https://github.com/pkristof1999/prog1/blob/master/Feladatok/mh.r">Monty Hall probléma.</link>
+            Megoldás forrása: <link xlink:href="https://github.com/pkristof1999/prog1/blob/master/Feladatok/mh.r">Monty Hall probléma</link>
         </para>
         <para>
             Tanulságok, tapasztalatok, magyarázat...

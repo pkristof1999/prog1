@@ -6,19 +6,24 @@
         </keywordset>
     </info>
     <section>
-        <title><type>int ***</type> háromszögmátrix</title>
+        <title><type>double **</type> háromszögmátrix</title>
         <para>
-           
+            Írj egy olyan <function>malloc</function> és <function>free</function>
+            párost használó C programot, amely helyet foglal
+            egy alsó háromszög mátrixnak a szabad tárban!
         </para>
         <para>
-            Megoldás videó:
+            Megoldás forrása:
         </para>
         <para>
-            Megoldás forrása:                
-        </para>
+            <link xlink:href="https://github.com/pkristof1999/prog1/blob/master/Feladatok/matrix.c">Háromszögmátrix</link>
+        </para>                    
         <para>
             Tanulságok, tapasztalatok, magyarázat...
-        </para>            
+        </para>      
+        <para>
+            A program egy olyan négyzetes mátrix (négyzetes mátrix: sorainak és oszlopainak a száma megegyezik) alsó háromszögét számítja ki, melynek a főátló felett kizárólag nulla áll. A program a memóriában 40 bájtot foglal le a malloc fügvény segítségével.
+        </para>      
     </section>        
     <section>
         <title>C EXOR titkosító</title>
@@ -26,14 +31,20 @@
             Írj egy EXOR titkosítót C-ben!
         </para>
         <para>
-            Megoldás videó:
-        </para>
-        <para>
             Megoldás forrása:                
         </para>
         <para>
+            <link xlink:href="https://github.com/pkristof1999/prog1/blob/master/Feladatok/eClean.c">C EXOR titkosító</link>
+        </para>
+        <para>
+            <link xlink:href="https://sourceforge.net/p/udprog/code/ci/master/tree/source/labor/exor/eClean.c">Forrás (SourceForge, UDPROG)</link>
+        </para>
+        <para>
             Tanulságok, tapasztalatok, magyarázat...
-        </para>            
+        </para>   
+        <para>
+            Ez a titkosító program az EXOR-ra, azaz a kizáró vagyra épít. A program lényege, hogy egy felhasználó által megadott 8 karakteres int kulcs segítségével (azért 8, mert a későbbiekben a visszafordító program 8 karakteres kulccsal dolgozik) egy szöveget lekódoljunk, amit majd a későbbiekben ugyanazzal a kóddal dekódolni is tudunk. A program két konstans értékkel dolgozik: a kulcs és a buffer maximális méretével, amit a program elején kell definiálni. A program fő ágában deklaráljuk magát a kulcsot és a buffert, és azokat a változókat, amelyek tárolják a kulcs hosszúságát és a beolvasott bájtok mennyiségét. A továbbiakban pedig rögzítjük a felhasználó által megadott kulcsnak a méretét, ez lesz az első parancssori argumentum is. Majd egy while ciklus segítségével megyünk végig a beolvasott bájtokon és EXOR séma segítségével titkosítjuk őket. Lefuttatni pedig a következővel tudjuk: először is a forrást "gcc eClean.c -o ec"-vel fordítjuk majd a következőkben "./ec "kulcs" <![CDATA[<tisztaszöveg.txt >titkosszöveg.txt]]>".
+        </para>   
     </section>        
     <section>
         <title>Java EXOR titkosító</title>
@@ -41,28 +52,40 @@
             Írj egy EXOR titkosítót Java-ban!
         </para>
         <para>
-            Megoldás videó:
+            Megoldás forrása:             
         </para>
         <para>
-            Megoldás forrása:                
+            <link xlink:href="https://github.com/pkristof1999/prog1/blob/master/Feladatok/ExorTitkosító.java">Java EXOR titkosító</link>
+        </para>
+        <para>
+            <link xlink:href="https://www.tankonyvtar.hu/hu/tartalom/tkt/javat-tanitok-javat/ch01.html">Forrás: www.tankonyvtar.hu</link>
         </para>
         <para>
             Tanulságok, tapasztalatok, magyarázat...
-        </para>            
+        </para>    
+        <para>
+            Ez az EXOR törő a fentebb megoldot feladat java-ban megírt megfelelője. Működése elvben és gyakorlatban is megegyezik. Lefordítása pedig a következő: "javac -encoding UTF-8 ExorTitkosító.java" majd futtatása pedig: <![CDATA["java ExorTitkosító "kulcs" < titkosított.txt"]]>.
+        </para>        
     </section>        
-    <section>
+    <section xml:id="bhax-textbook-feladatok-caesar.EXOR-toro">
         <title>C EXOR törő</title>
         <para>
             Írj egy olyan C programot, amely megtöri az első feladatban előállított titkos szövegeket!
         </para>
         <para>
-            Megoldás videó:
-        </para>
-        <para>
             Megoldás forrása:                
         </para>
         <para>
+            <link xlink:href="https://github.com/pkristof1999/prog1/blob/master/Feladatok/tClean.c">C EXOR törő</link>
+        </para>
+        <para>
+            <link xlink:href="https://sourceforge.net/p/udprog/code/ci/master/tree/source/labor/exor/tClean.c">Forrás (SourceForge, UDPROG)</link>
+        </para>
+        <para>
             Tanulságok, tapasztalatok, magyarázat...
+        </para>
+        <para>
+            Ez a program a fent EXOR-ral lekódolt szöveget kódolja vissza a megfelelő 8 int hosszúságú kulcs segítségével. Ebben a programban is definiáljuk, hogy mennyi konstansokkal dolgozzon. Kezdetnek az első for ciklusnál kiszámoljuk, hogy mennyi az átlagos szóhossz szóközök segítségével, ami azért fontos, hogy könnyebben válassza el a szavakat. Ezután jöhet az EXOR végrehajtása bájtonként. Amíg van karakter a szöveges fájlban, addig fut a program, majd amint elfogynak kiürítjük a buffert is. Majd a for ciklusokkal minden lehetséges kulcsot előállítunk. Lefuttatni pedig a következővel tudjuk: először is a forrást "gcc tClean.c -o tc"-vel fordítjuk majd a következőkben "./tc "kulcs" <![CDATA[<titkosszöveg.txt >tisztaszöveg.txt]]>".
         </para>            
     </section>        
     <section>
@@ -78,7 +101,10 @@
         </para>
         <para>
             Tanulságok, tapasztalatok, magyarázat...
-        </para>            
+        </para>  
+        <para>
+            A programot még nem látom át/nem értem teljesen de dolgozom a megoldásán.
+        </para>          
     </section>        
     <section>
         <title>Hiba-visszaterjesztéses perceptron</title>
@@ -86,14 +112,17 @@
             C++
         </para>
         <para>
-            Megoldás videó:
+            Megoldás videó: <link xlink:href="https://youtu.be/XpBnR31BRJY">https://youtu.be/XpBnR31BRJY</link>
         </para>
         <para>
-            Megoldás forrása:                
+            Megoldás forrása: <link xlink:href="https://github.com/nbatfai/nahshon/blob/master/ql.hpp#L64">https://github.com/nbatfai/nahshon/blob/master/ql.hpp#L64</link>               
         </para>
         <para>
             Tanulságok, tapasztalatok, magyarázat...
-        </para>            
+        </para>   
+        <para>
+            A programot még nem látom át/nem értem teljesen de dolgozom a megoldásán.
+        </para>         
     </section>        
         
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
