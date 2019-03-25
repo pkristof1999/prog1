@@ -5,30 +5,42 @@
             <keyword/>
         </keywordset>
     </info>
-    <section>
+    <section xml:id="bhax-textbook-feladatok-mandelbrot.Mandelbrot">
         <title>A Mandelbrot halmaz</title>
         <para>
-                
+            Írj olyan C++ programot, amely kiszámolja a Mandelbrot halmazt!     
         </para>
         <para>
-            Megoldás videó:
+            Megoldás forrása: 
+	</para>
+	<para>               
+ 	<link xlink:href="https://github.com/pkristof1999/prog1/blob/master/Feladatok/mandelpngt.c%2B%2B">Mandelbrot halmaz </link>
         </para>
         <para>
-            Megoldás forrása:                
+	Tanulságok, tapasztalatok, magyarázat...
         </para>
+	<para>
+	A feladat megkezdése előtt fontos tudni, hogy mik is a fraktálok, és hogyan kapcsolódnak a Mandelbrot halmazhoz. A fraktálok olyan alakzatok, amik végtelenül komplexek, két fő tulajdonságuk, hogy a legtöbb geometria alakzattal ellentétben a fraktálok szélei nem egyenletesek, és, hogy nagyon hasonlítanak egymásra. Ha egy kör szélét folyamatosan nagyítjuk, egy idő után egyenesnek látjuk. Ezzel szemben a fraktálok szakadozottak maradnak függetlenül a nagyítás mértékétől. A program futtatásához előszöris szükségünk lesz a libpng++ könyvtárra, amelyet a következő paranccsal szerezhetünk be: "sudo apt-get install libpng++-dev". Majd a fordítás a következőképp zajlik: "g++ mandelpngt.c++ -lpng16 -O3 -o mandelpngt". A program célja egy png kép létrehozása a Mandelbrot halmazról. Futtatásához a terminálba a következőt két argumentumot kell megadni: "./mandelpngt t.png".
+	</para>
     </section>        
         
     <section>
         <title>A Mandelbrot halmaz a <filename>std::complex</filename> osztállyal</title>
         <para>
-                
-        </para>
-        <para>
-            Megoldás videó:
+            Írj olyan C++ programot, amely kiszámolja a Mandelbrot halmazt!                     
         </para>
         <para>
             Megoldás forrása:                
         </para>
+        <para>        
+            <link xlink:href="https://github.com/pkristof1999/prog1/blob/master/Feladatok/3.1.2.cpp">Mandelbrot halmaz std::complex osztállyal</link> 
+        </para>
+        <para>
+	Tanulságok, tapasztalatok, magyarázat...
+        </para>
+	<para>
+	Ez a feladat az előzőt veszi alapul, kiegészítve. Egyik legfontosabb különbség, hogy itt a valós és a képzetes változókat mostmár eggyütt kezeljük, melyet számunkra lehetőve teszi a library, melynek segítségével a gép képes kezelni ezeket a számokat. Következő pedig, hogy a felhasználó adhatja meg a létrehozandó kép paramétereit, viszont nem okoz hibát az sem, ha nincs megadva érték, ilyenkor az alapértelmezett értékeket használja a program. Fordításhoz a következőre lesz szükségünk: "g++ 3.1.2.cpp -lpng -O3 -o 3.1.2", majd futtatáshoz pedig "./3.1.2 mandel.png (és a programban is megtalálható értékek)". A libpng++ könyvtárra itt is szintén szükségünk lesz, ahogyan az első feladatban is.
+	</para>
     </section>        
                 
     <section>
@@ -36,25 +48,35 @@
         <para>
         </para>
         <para>
-            Megoldás videó: <link xlink:href="https://youtu.be/IJMbgRzY76E">https://youtu.be/IJMbgRzY76E</link>
+            Megoldás forrása:
         </para>
         <para>
-            Megoldás forrása: <link xlink:href="https://gitlab.com/nbatfai/bhax/tree/master/attention_raising/Biomorf">https://gitlab.com/nbatfai/bhax/tree/master/attention_raising/Biomorf</link>
+            <link xlink:href="https://github.com/pkristof1999/prog1/blob/master/Feladatok/3.1.3.cpp">Biomorfok</link>
+        </para>  
+        <para>
+	Tanulságok, tapasztalatok, magyarázat...
         </para>
         <para>
-            Tanulságok, tapasztalatok, magyarázat...
-        </para>                        
+            Ez a feladat nagyon hasonlít a Mandelbrot halmaznál megírt programra, viszont itt nem kimondottan a Mandelbrot halmazzal foglalkozunk, hanem egy olyan halmazzal ami nagyon szoros kapcsolatban áll a Julia halmazzal. Fontos tudni hogy a Mandelbrot halmaz tartalmazza az összes lehetséges Julia halmazt és értelemszerűen ez fordítva nem igaz. A Biomorfokat Clifford Pickover fedezte fel miközben egy Julia halmazt rajzoló prgramon dolgozott. A programot a következőképp fordítjuk: "g++ 3.1.3.cpp -lpng -O3 -o 3.1.3", majd futtatjuk: "./3.1.3 bmorf.png 800 800 10 -2 2 -2 2 .285 0 10". Ennél is fontos a libpng++ könyvtár megléte, úgyhogy ha eddig az nincs meg akkor nézzünk vissza az első feladatra.
+        </para>                                                                       
     </section>                     
 
     <section>
         <title>A Mandelbrot halmaz CUDA megvalósítása</title>
         <para>
         </para>
+        
         <para>
-            Megoldás videó: 
+            Megoldás forrása:                        
         </para>
         <para>
-            Megoldás forrása:  
+            <link xlink:href="https://github.com/pkristof1999/prog1/blob/master/Feladatok/mandelpngc_60x60_100.cu">A Mandelbrot halmaz CUDA megvalósítása</link>
+        </para>
+        <para>
+	Tanulságok, tapasztalatok, magyarázat...
+        </para>
+        <para>
+            Ez a feladat teljesen megegyezik az első feladatban látottakkal, annyi kis különbséggel, hogy a megoldáshoz szükségünk van egy nVidia videokártyához, hogy az nVidia által kifejlesztett nyelven, illetve fordítóval tudjuk használni. A fordító program letöltéséhez szükségünk lesz a következő parancssorra: "sudo apt install nvidia-cuda-toolkit". Ezzel letöltődik a fordításhoz szükséges környezet, nagyon fontos tudni, hogy habár települhet, illetve jónak tűnhet AMD típusú hardveren, ne is fáradjunk a kipróbálásával mert nem fog működni (személyes tapasztalat). Majd miután települt a következőképp fordíthatjuk: "nvcc mandelpngc_60x60_100.cu -lpng16 -O3 -o mandelpngc", ezt követően pedig: "./mandelpngc c.png".
         </para>
     </section>                     
 
@@ -64,22 +86,35 @@
             Építs GUI-t a Mandelbrot algoritmusra, lehessen egérrel nagyítani egy területet, illetve egy pontot
             egérrel kiválasztva vizualizálja onnan a komplex iteréció bejárta z<subscript>n</subscript> komplex számokat!
         </para>
-            
         <para>
-            Megoldás forrása:  
-        </para>
-
-        <para>
-            Megoldás videó: 
+            Megoldás forrása:
         </para>
         <para>
-            Megoldás forrása:  
+            <link xlink:href="https://github.com/pkristof1999/prog1/tree/master/Feladatok/Mandelbrot%20Nagyító">Mandelbrot nagyító és utazó C++ nyelven</link>
+        </para>
+        <para>
+            <link xlink:href="https://sourceforge.net/p/udprog/code/ci/master/tree/source/kozepes/Qt/mandel_nagyito/">Forrás (SourceForge, UDPROG)</link>
+        </para>
+        <para>
+	Tanulságok, tapasztalatok, magyarázat...
+        </para>
+        <para>
+            A forráskód a QT GUI-t használja, ennek segítségével tudjuk elkészíteni programunkat. Ez az egyik legertejedtebb garfikus felülete a C++-nak. Fordítás a következőképp megy végbe: a futtatáshoz szükséges 4 fájlnak egy hely kell lenniük. A mappán belül megnyitjuk a terminált, majd beírjuk a "qmake -project" parancsot. Ez létre fog hozni egy "*.pro" fájlt, minekután a fájlba be kell írni a következőt: "QT += widgets sort". Majd futtatni kell a "qmake *.pro" parancsot, azután létrejön a mappában egy ún. "Makefile" (ezt kell majd használni). Terminálba beírjuk a következőt: "make", ami létrehoz egy fájlt, amit a szokásos módon futtatunk. Futás közben az "n" betűt lenyomva nagyíthatjuk ki a szóban forgó képet.
         </para>
     </section>                     
                                                                                                                                                                             
     <section>
         <title>Mandelbrot nagyító és utazó Java nyelven</title>
         <para>
+        </para>
+        <para>
+            Megoldás forrása:
+        </para>
+        <para>
+	Tanulságok, tapasztalatok, magyarázat...
+        </para>
+        <para>
+            
         </para>
     </section>
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         

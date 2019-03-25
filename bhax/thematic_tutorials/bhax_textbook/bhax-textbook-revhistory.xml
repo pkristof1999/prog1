@@ -98,4 +98,12 @@
             Ceaser csokor befejezése legjobb tudás szerint.
         </revremark>
     </revision>
+    <revision>
+    <revnumber>0.1.3</revnumber>
+        <date>2019-03-25</date>
+        <authorinitials>pkristof1999</authorinitials>
+        <revremark>
+            Mandelbrot csokor labor feladatainak elkészítése, Gutenber csokor elkezdése.
+        </revremark>
+    </revision>
 </revhistory>

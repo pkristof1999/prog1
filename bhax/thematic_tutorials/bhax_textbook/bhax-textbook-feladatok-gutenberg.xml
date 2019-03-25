@@ -1,0 +1,73 @@
+<chapter xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xi="http://www.w3.org/2001/XInclude" version="5.0" xml:lang="hu">
+    <info>
+        <title>Helló, Gutenberg!</title>
+        <keywordset>
+            <keyword/>
+        </keywordset>
+        <cover>
+            <para>
+                Programozás tankönyvek rövid olvasónaplói.
+            </para>
+        </cover>
+    </info>
+    <section>
+        <title>Programozási alapfogalmak (Juhász István - Magas szintű programozási nyelvek 1)</title>
+        <para> 
+            A magas szintű nyelven megírt programokat forrásszövegnek, a nyelvtani szabályokat 
+            pedig szintaktikai szabályoknak nevezzük. Frodítóprogrammal tudjuk fordítani, lexikális egységekre bontja 
+            tárgyprogramot hoz létre. Ezt majd futtatni kell, amit a futtató rendszer felügyel.
+            Az interpretes technika nem készí tárgyprogramot, utasításonként elemz a programot, értelmezi és 
+            végrehajtja. Minden nyeévnek megvan a saját szabvány, a hivatkozási nyelve. Az implementációk a 
+            forsítóprogramok vagy az interpreterek, egy platformon több is lehet belőlük.  
+            Imperatív nyelvek: algoritmus mely mülködteti a processzort, utasítások, változók, 
+            eljárásorientált- és objektumorientált nyelvek. Deklaratív nyelvek: nem kötődnek a Neumann 
+            architektúrához, funkcionális- és logikai nyelvek.
+            Jelölésrendszerek: terminális, nem terminális, alternatíva, opció, iteráció.
+            Ezekkel szintaktikai szabályoka lehet írni: bal oldalon nem formális, :, majd elemsorozat.
+            Programozni megtanulni papíron nem lehet.
+            Az adattípus absztrakt programozási eszköz, más eszköz  komponenseként jelenik meg. 
+            Az adattípust a tartomány (amilyen típust felvehet), a művelet (amit a tartomány elemein 
+            elvégezhet) és a reprezentáció (az értékek tárban való megjelenése) határoz meg.
+            A programozó is definiálhat típusokat. Az alaptípusból tudunk más típust (alaptípust) 
+            származtatni, szűkített tartománnyal de ugyanolyan műveletekkel.
+            Az egész típus belső ábrázolása fixpontos, a valósé lebegőpontos. A két típus együtt 
+            a numerikus típusok, mivel numerikus műveletek hajthatók rajtuk végre
+            A karakrer típus elemei a karakterek, a karakterlánccé pedig a sztringek. 
+            A logikai típus tartományának elemei a hamis és az igaz érékek. A felsorolás típust saját 
+            típusként lehet létrehozni, megadva  atrtomány elemeit. Sorszámozott típusnak számít az 
+            egesz, karakteres, logikai és felsorolás típusok (minden elemnek van megelőzője és rákövetkezője).
+            A sorszámozottak egy alaptípusa az intervallum típus.
+            Folyamatban...
+        </para>
+    </section> 
+           
+           
+    <section>
+        <title>Programozás bevezetés (Kernighan Ritchie - A C programozási nyelv)</title>
+        <para>
+            Annak a módja, hogy egy programozási nyelvet elsajátítsunk, nem más mint higy programokat írjunk az adott nyelven. 
+            A C nyleg tanulását is kezdjük úgy, mint más nyelvek tanulása esetén, a legegyszerűbb programmal a 
+            Hello World magyar változatával. Fordítjuk: cc figyel.c, majd futtatjuk: ./a.out. 
+            Mivel a cc-vel fordítottuk ezért egy alapértelmezett kimenetbe megy az a.out-ba. 
+            A C programok tetszőleges nevű függvényeket tartalmaznak amelyek a számítási műveleteket határozzák meg. 
+            Speciális függvény a main (főprogram) mely minden programban elő kell forduljon. 
+            Itt hívjuk meg az előre megírt függvényeket, vagy itt írjuk meg. A program olyan sorrendben végzi el 
+            az utasításokat ahogy azok a main-be vannak. A függvény neve után szereplő () az argumentum listát tartalmazza, 
+            a {} pedig az utasítás listát (lehetnek üresek is). 
+            A printf("Figyelem emberek\n") függvényhívás a kimenetbe írja a Figyelem emberek szöveget, a végére pedig egy sortörést.
+            Egysoros kommentet a //-el, többsorosat pedig a /* */ jelek segítségével hozunk létre. Az int az egész, a float a lebegő, char a karakter, 
+            stb típusú váltózókat jelöli. Sorok végét ;-vel zárjuk le.
+            Folyamatban...
+        </para>
+  
+    </section>  
+         
+         
+    <section>
+        <title>Programozás (Benedek Zoltán, Levendovszky Tihamér: Szoftverfejlesztés C++ nyelven)</title>
+        <para>
+            Folyamatban...
+        </para>
+    </section>   
+</chapter>                
+

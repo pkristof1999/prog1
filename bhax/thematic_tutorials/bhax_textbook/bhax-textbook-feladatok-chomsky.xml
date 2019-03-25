@@ -17,6 +17,9 @@
             <link xlink:href="https://github.com/pkristof1999/prog1/blob/master/Feladatok/atvalto.c">Unárisba váltó</link>
         </para>
         <para>
+            <link xlink:href="https://github.com/pkristof1999/prog1/blob/master/Feladatok/turing.png">Ábra</link>
+        </para>
+        <para>
             Tanulságok, tapasztalatok, magyarázat...
         </para>
         <para>
@@ -50,7 +53,7 @@
             Tanulságok, tapasztalatok, magyarázat...
         </para>
         <para>
-            A C nyelv C99-es kiadása a C89-hez képest sok újítást hozott, viszont az egyik legfontosabb, illetve legegyszerűbb újítás az, hogy C89-hez képest a C99-es nyelvben lehet C++ típusú kommentelést használni.
+            A BNF (Backus-Naur-forma) segítségével környezetfüggetlen grammatikákat tudunk leírni. Széleskörben alkalmazzák a programozási nyelvek szintaxisának leírására. A C nyelv C99-es kiadása a C89-hez képest sok újítást hozott, viszont az egyik legfontosabb, illetve legegyszerűbb újítás az, hogy C89-hez képest a C99-es nyelvben lehet C++ típusú kommentelést használni.
         </para>
     </section>                     
     <section>
@@ -70,7 +73,7 @@
             Tanulságok, tapasztalatok, magyarázat...
         </para>
         <para>
-            Ez egy olyan program, amelyet lefuttatva lex-el készít nekünk egy új c forrást, amely bármely karaktersor közül képes felismerni a valós számokat.
+            (Ratku Dániel segítségével) Ez a program a lefuttatása során egy másik programot állít elő. A lefuttatás menete: lex -o program.c program.l . A C-s programuk fordításánál pedig szükség van a végére illeszteni egy -lfl tag-et. A működési elve az, hogy az L nyelv lexelve létrehozza azt a C programot, amely egy komplex karaktersorból kitudja szűrni a valós számokat. A programot a két dupla % (százalékjel) szedi három részre. Az első harmada tartalmazza a C programba kerülő részt. A középső része tartalmazza a szabályrendszert, és a C-s ciklust. A végső harmadban pedig a komplett main rész van implementálva.
         </para>
     </section>                     
 
