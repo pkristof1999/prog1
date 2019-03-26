@@ -109,19 +109,17 @@
     <section>
         <title>Hiba-visszaterjesztéses perceptron</title>
         <para>
-            C++
-        </para>
-        <para>
-            Megoldás videó: <link xlink:href="https://youtu.be/XpBnR31BRJY">https://youtu.be/XpBnR31BRJY</link>
-        </para>
-        <para>
-            Megoldás forrása: <link xlink:href="https://github.com/nbatfai/nahshon/blob/master/ql.hpp#L64">https://github.com/nbatfai/nahshon/blob/master/ql.hpp#L64</link>               
+            Megoldás forrása: <link xlink:href="https://github.com/nbatfai/nahshon/blob/master/ql.hpp#L64">Hiba-visszaterjesztés perceptron (Forrás: GitHub/nbatfai)</link>               
         </para>
         <para>
             Tanulságok, tapasztalatok, magyarázat...
         </para>   
-        <para>
-            A programot még nem látom át/nem értem teljesen de dolgozom a megoldásán.
+            <para>
+            (A feladat megoldásásában segítséget Pataki Donát nyújtott.) A perceptron nem más mint egy algoritmus model, ami az emberi agy muködését próbálja utánozni. Hason-
+            ló a neurális hálóhoz azonban van pár különbség. Ugyanúgy input után elkezd varázsolni és jobb esetben és megfelelo mintavétel után helyes eredményt ad vissza. Azonban a közbelső értékeknek van súlya amit  ̋
+            még adott konstansokkal is ki lehet egészíteni. Az így kapott súlyokat összeadja és ha ez elér egy bizonyos
+            szintet, akkor a program adott része aktiválódik. És egy a lineáris folyamat ismétlodik amíg el nem jut a  ̋
+            válaszig. 
         </para>         
     </section>        
         
