@@ -40,10 +40,6 @@
 // 0.0.3, http://progpater.blog.hu/2011/03/05/labormeres_otthon_avagy_hogyan_dolgozok_fel_egy_pedat
 //
 
-
-                //>gcc z.c -lm -o z        fordítása
-                //>
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
@@ -54,7 +50,7 @@ typedef struct binfa
   int ertek;
   struct binfa *bal_nulla;
   struct binfa *jobb_egy;
-                //>itt definiáljuk a binfa típust
+
 } BINFA, *BINFA_PTR;
 
 BINFA_PTR
@@ -79,27 +75,53 @@ int
 main (int argc, char **argv)
 {
   char b;
-  int egy_e;
-  int i;
-  unsigned char c;
-                //>BinfaPTR== user által definiált típus
+  int i, egy_e;
+
   BINFA_PTR gyoker = uj_elem ();
   gyoker->ertek = '/';
   gyoker->bal_nulla = gyoker->jobb_egy = NULL;
   BINFA_PTR fa = gyoker;
   long max=0;
-while (read (0, (void *) &b, sizeof(unsigned char)))
+while (read (0, (void *) &b, 1))
     {
-        for(i=0;i<8; ++i)
-        {
-            egy_e= b& 0x80;
-            if ((egy_e >>7)==0)
-                c='1';
-            else
-                c='0';
-        }
 //      write (1, &b, 1);
-      if (c == '0')
+
+	for (i = 0; i < 8; ++i)
+	{
+	  egy_e = b & 0x80;
+	  if ((egy_e >> 7) == 1)
+	    //printf ("1");
+		if (fa->jobb_egy == NULL)
+	    {
+	      fa->jobb_egy = uj_elem ();
+	      fa->jobb_egy->ertek = 1;
+	      fa->jobb_egy->bal_nulla = fa->jobb_egy->jobb_egy = NULL;
+	      fa = gyoker;
+	    }
+		  else
+	    {
+	      fa = fa->jobb_egy;
+	    }
+
+	  else
+	    //printf ("0");
+		if (fa->bal_nulla == NULL)
+	    {
+	      fa->bal_nulla = uj_elem ();
+	      fa->bal_nulla->ertek = 0;
+	      fa->bal_nulla->bal_nulla = fa->bal_nulla->jobb_egy = NULL;
+	      fa = gyoker;
+	    }
+	  else
+	    {
+	      fa = fa->bal_nulla;
+	    }
+	  b <<= 1;
+	}
+
+
+
+ /*     if (b == '0')
 	{
 	  if (fa->bal_nulla == NULL)
 	    {
@@ -126,7 +148,7 @@ while (read (0, (void *) &b, sizeof(unsigned char)))
 	    {
 	      fa = fa->jobb_egy;
 	    }
-	}
+	}*/
     }
 
   printf ("\n");
@@ -235,7 +257,7 @@ kiir (BINFA_PTR elem)
   if (elem != NULL)
     {
       ++melyseg;
-      _melyseif (melyseg > maxg);
+      if (melyseg > max_melyseg)
 	max_melyseg = melyseg;
       kiir (elem->jobb_egy);
       // ez a postorder bejáráshoz képest
