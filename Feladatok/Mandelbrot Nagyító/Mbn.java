@@ -1,11 +1,11 @@
-*
+/*
  * MandelbrotHalmazNagyító.java
  *
  * DIGIT 2005, Javat tanítok
  * Bátfai Norbert, nbatfai@inf.unideb.hu
  *
  */
-/**
+ /*
  * A Mandelbrot halmazt nagyító és kirajzoló osztály.
  *
  * @author Bátfai Norbert, nbatfai@inf.unideb.hu
