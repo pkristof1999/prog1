@@ -91,35 +91,41 @@
     <section>
         <title>Neurális OR, AND és EXOR kapu</title>
         <para>
-            R
+            Megoldás forrása:               
         </para>
         <para>
-            Megoldás videó: <link xlink:href="https://youtu.be/Koyw6IH5ScQ">https://youtu.be/Koyw6IH5ScQ</link>
-        </para>
-        <para>
-            Megoldás forrása: <link xlink:href="https://gitlab.com/nbatfai/bhax/tree/master/attention_raising/NN_R">https://gitlab.com/nbatfai/bhax/tree/master/attention_raising/NN_R</link>               
+             <link xlink:href="https://github.com/pkristof1999/prog1/blob/master/Feladatok/nn.r">Neurális OR, AND és EXOR kapu</link>
         </para>
         <para>
             Tanulságok, tapasztalatok, magyarázat...
         </para>  
         <para>
-            A programot még nem látom át/nem értem teljesen de dolgozom a megoldásán.
+            (Tutorom Pataki Donát) Ezt a programot az R nyelvben írtuk. A program elnevezése utal az agy összetevőjére, a neuronokra, melyek feladata az elektromos összeköttetés.
+            A neurális háló az, "ahol" and, "or" és "exor" kapuk vannak beágyazva. Az "and" és az "or" működése egyértelmű. ̋
+            Az előbbinél ha mindkettő 1 akkor lesz az eredményük az 1. Utóbbinál, ha az egyik 1 akkor lesz az  ̋
+            eredményük az 1. "Exor"-nál pedig ha a két érték nem egyezik meg (0 és 1 esetén), akkor
+            lesz az eredmény 1 és ez fordított esetben is igaz. A neurális hálór 3 részre lehet osztani. Van az "input layer", ahol megkapja az adatokat, a "hidden
+            layer", ahol a varázslat történik és az "output layer", ahol ha minden jól működik a megfelelő értékeket kapjuk vissza.
         </para>          
     </section>        
     <section>
         <title>Hiba-visszaterjesztéses perceptron</title>
         <para>
-            Megoldás forrása: <link xlink:href="https://github.com/nbatfai/nahshon/blob/master/ql.hpp#L64">Hiba-visszaterjesztés perceptron (Forrás: GitHub/nbatfai)</link>               
+            Megoldás forrása:               
+        </para>
+        <para>
+            <link xlink:href="https://github.com/pkristof1999/prog1/blob/master/Feladatok/perceptron.hpp">Hiba-visszaterjesztéses perceptron</link>
         </para>
         <para>
             Tanulságok, tapasztalatok, magyarázat...
         </para>   
-            <para>
-            (A feladat megoldásásában segítséget Pataki Donát nyújtott.) A perceptron nem más mint egy algoritmus model, ami az emberi agy muködését próbálja utánozni. Hason-
-            ló a neurális hálóhoz azonban van pár különbség. Ugyanúgy input után elkezd varázsolni és jobb esetben és megfelelo mintavétel után helyes eredményt ad vissza. Azonban a közbelső értékeknek van súlya amit  ̋
-            még adott konstansokkal is ki lehet egészíteni. Az így kapott súlyokat összeadja és ha ez elér egy bizonyos
-            szintet, akkor a program adott része aktiválódik. És egy a lineáris folyamat ismétlodik amíg el nem jut a  ̋
-            válaszig. 
+        <para>
+           (Tutorom Pataki Donát) A perceptron egy algoritmus model, amely az emberi agy muködését próbálja utánozni.
+           Hasonló a neurális hálóhoz azonban van pár különbség. Ugyanúgy "input" után elkezd "varázsolni" és jobb esetben,
+           ha megfelelő a mintavétel, akkor helyes eredményt ad vissza. Azonban a középső értékeknek van súlya, amit  ̋
+           még adott konstansokkal is ki lehet egészíteni. Az így kapott súlyokat összeadja és ha ez elér egy bizonyos
+           szintet, akkor a program adott része aktiválódik és egy  lineáris folyamat amely addig ismétlodik, amíg el nem jut a  ̋
+           válaszig.
         </para>         
     </section>        
         

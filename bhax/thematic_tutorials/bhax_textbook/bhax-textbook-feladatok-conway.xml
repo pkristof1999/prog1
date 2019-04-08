@@ -28,14 +28,23 @@
             valósítsa meg a sikló-kilövőt!
         </para>
         <para>
-            Megoldás videó: 
+            Megoldás forrása:              
         </para>
         <para>
-            Megoldás forrása: <link xlink:href=""></link>               
+            <link xlink:href="https://github.com/pkristof1999/prog1/blob/master/Feladatok/gof.java">Java életjáték</link>
+        </para>
+        <para>
+            <link xlink:href="https://www.algosome.com/articles/conway-game-of-life-2d.html">Forrás: www.algosome.com</link> 
         </para>
         <para>
             Tanulságok, tapasztalatok, magyarázat...
-        </para>            
+        </para> 
+        <para>
+            A Conway-féle sejtautómatát kellett a feladatban elkészíteni. A program egy 2 dimenziós koordinátarendszerben dolgozik, 
+            amelyben találhatók az ún. sejtek, amelyek vagy "élő" vagy "halott" (0 v. 1) sejtek. Egy véletlenszerű vagy előre meghatározott állapot
+            indítja el az életjátékot, majd több iteráció fut le (ahol minden iteráció meghatároz egy sejtet). Habár egyszerű szabályokkal
+            és akár véletlenszerűekkel is le lehet futtatni, mindig egyedi formák és viselkedéstípusok emelkednek ki a rácsból.
+        </para>           
     </section>        
     <section>
         <title>Qt C++ életjáték</title>
@@ -43,13 +52,17 @@
             Most Qt C++-ban!
         </para>
         <para>
-            Megoldás videó: 
+            Megoldás forrása:             
         </para>
         <para>
-            Megoldás forrása: <link xlink:href=""></link>               
+            <link xlink:href="https://github.com/pkristof1999/prog1/tree/master/Feladatok/Sejtautomata">Qt életjáték (Forrás: UDPROG)</link>  
         </para>
         <para>
             Tanulságok, tapasztalatok, magyarázat...
+        </para>
+        <para>
+            Ebben a feladatban az előző feladat megvalósítása volt a dolgunk c++-ban a Qt környezet segítségével. Ez komplexebb megvalósítás,
+            mint a java-s megoldás, viszont a működési elve ugyanaz.
         </para>            
     </section>        
     <section>

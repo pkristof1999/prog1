@@ -14,15 +14,18 @@
             nincs eltéve kiszámolt szám.
         </para>
         <para>
-            Megoldás videó:
-        </para>
-        <para>
             Megoldás forrása:                
         </para>
         <para>
-            Tanulságok, tapasztalatok, magyarázat... térj ki arra is, hogy a JDK forrásaiban a Sun programozói
-            pont úgy csinálták meg ahogyan te is, azaz az OO nemhogy nem nehéz, hanem éppen természetes neked!
-        </para>                
+            <link xlink:href="https://github.com/pkristof1999/prog1/tree/master/Feladatok/Polártranszformációs%20Algoritmus">Első osztályom (a mappa tartalmazza a java és a c++ forrásokat is)(Forrás: UDPROG)</link>
+        </para>
+        <para>
+            Tanulságok, tapasztalatok, magyarázat...
+        </para>  
+        <para>
+            Ebben a programban polártranszformáció segítségével véletlenszerű számokat tudunk kiszámolni. A Java véletlenszerű-szám generátora is ezt használja.
+            A polártanszformációs algoritmus két "véletlen" értéket generál. A megadott forrásokat összehasonlítva rájöhetünk, hogy a java kódja egyszerűbb és átláthatóbb.
+        </para>
     </section>        
 
     <section>
@@ -31,10 +34,21 @@
             Valósítsd meg C-ben az LZW algoritmus fa-építését!
         </para>
         <para>
-            Megoldás videó:
+            Megoldás forrása:                
         </para>
         <para>
-            Megoldás forrása:                
+            <link xlink:href="https://github.com/pkristof1999/prog1/tree/master/Feladatok/BinFa">LZW (Forrás: UDPROG)</link>
+        </para>
+        <para>
+            Tanulságok, tapasztalatok, magyarázat...
+        </para>
+        <para>
+            Maga az LZW fa lényege, hogy futás közben egy általunk megadott szöveges dokumentum sorait fogjuk beolvasni, 
+            és ezeket az értékeket bináris kóddá alakítjuk, amelyeket egymásba ágyazott for ciklusokkal rendezünk.
+            A program természetesen addig olvas, amíg van nem üres sor és úgy építi fel a fát, hogy
+            mindig leellenőrzi azt, hogy van-e 1-es vagy 0-ás gyermek, ha nincs akkor létrehozza azt, majd visszaugrik a
+            gyökérre. Ellenkező esetben az 1-es és a 0-ás gyermekre lép, és mindaddig lépked a fában, ameddig nem talál
+            egy olyan részfát, ahol létre kellene hozni egy új gyermeket. Ezekután visszaugrik a gyökérre.
         </para>
     </section>        
         
@@ -44,10 +58,19 @@
             Járd be az előző (inorder bejárású) fát pre- és posztorder is!
         </para>
         <para>
-            Megoldás videó:
+            Megoldás forrása:                
         </para>
         <para>
-            Megoldás forrása:                
+            <link xlink:href="https://github.com/pkristof1999/prog1/tree/master/Feladatok/BinFa">LZW (preorder/posztorder)(Forrás: UDPROG)</link>
+        </para>
+        <para>
+            Tanulságok, tapasztalatok, magyarázat...
+        </para>
+        <para>
+            Ez a feladat megegyezik az előző feladattal, különbség a bejárási mintában keresendő.
+            Míg az alapnak tekinthető Inorder (amely az előző feladatban is megoldásul szolgált) bejárási formálya a következő: Inorder (Left, Root, Right),
+            addig a Posztorderé: Postorder (Left, Right, Root), valaint a Preorderé pedig: Preorder (Root, Left, Right).
+            Forrás: <link xlink:href="https://www.geeksforgeeks.org/tree-traversals-inorder-preorder-and-postorder/">https://www.geeksforgeeks.org/tree-traversals-inorder-preorder-and-postorder/</link>
         </para>
     </section>        
                         
@@ -57,11 +80,18 @@
             Az LZW algoritmust ültesd át egy C++ osztályba, legyen egy Tree és egy beágyazott Node
             osztálya. A gyökér csomópont legyen kompozícióban a fával!
         </para>
-        <para>
-            Megoldás videó:
-        </para>
+        
         <para>
             Megoldás forrása:                
+        </para>
+        <para>
+            <link xlink:href="https://github.com/pkristof1999/prog1/tree/master/Feladatok/BinFa">Tag a gyökér</link>
+        </para>
+        <para>
+            Tanulságok, tapasztalatok, magyarázat...
+        </para>
+        <para>
+            
         </para>
     </section>        
                 
@@ -72,10 +102,16 @@
             fával!
         </para>
         <para>
-            Megoldás videó: 
+            Megoldás forrása:  
         </para>
         <para>
-            Megoldás forrása:  
+            <link xlink:href="https://github.com/pkristof1999/prog1/tree/master/Feladatok/BinFa">Mutató a gyökér</link>
+        </para>
+        <para>
+            Tanulságok, tapasztalatok, magyarázat...
+        </para>
+        <para>
+            
         </para>
     </section>                     
 
@@ -86,10 +122,16 @@
             értékadásra alapozva!
         </para>
         <para>
-            Megoldás videó: 
+            Megoldás forrása:  
         </para>
         <para>
-            Megoldás forrása:  
+            <link xlink:href="https://github.com/pkristof1999/prog1/tree/master/Feladatok/BinFa">Mozgató szemantika</link>
+        </para>
+        <para>
+            Tanulságok, tapasztalatok, magyarázat...
+        </para>
+        <para>
+            
         </para>
     </section>                     
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
