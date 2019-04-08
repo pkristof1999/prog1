@@ -91,7 +91,8 @@
             Tanulságok, tapasztalatok, magyarázat...
         </para>
         <para>
-            
+            A fát felépítő algoritmus megegyezik az előzővel, annyi az eltérés, hogy nem hívunk meg szokásos formát az építéshez,
+            hanem egyszerűen bele "shifteljük" az elemeket a fába.
         </para>
     </section>        
                 
@@ -111,7 +112,9 @@
             Tanulságok, tapasztalatok, magyarázat...
         </para>
         <para>
-            
+            Át kell állítsuk a gyökér létrehozását, a "Heapen" fogunk allokálni neki helyett a "Stack" helyett. Le kell, hogy vegyük az iniciliazálási
+            listát, mivel a Node konstruktora fog később lefutni.
+            Egyetlen utasítással kell bővítenünk a "desktruktort", mégpedig "delete gyoker" a felszabadítások végén.
         </para>
     </section>                     
 
@@ -131,7 +134,10 @@
             Tanulságok, tapasztalatok, magyarázat...
         </para>
         <para>
-            
+            Az előző feladatot alapul véve implementáljuk bele a mozgató és mozgató-értékadás alapú konstruktorokat.   
+            Mozgató konstruktornál "nullptr"-re állítjuk a BinFa gyökerét, majd erre a BinFára rávisszük az "other"
+            nevű fát, mely lényege, hogy a kapott "lvalue"-ból "rvalue"-t készít, így átvisszük az összes adatát az új fába,
+            ezért felszabadul az a memória, amelyet eddig foglalt és kiürül az "other".
         </para>
     </section>                     
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
