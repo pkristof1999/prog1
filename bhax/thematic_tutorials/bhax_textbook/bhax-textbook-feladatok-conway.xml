@@ -12,15 +12,27 @@
             készíts UML osztálydiagramot is!
         </para>
         <para>
-            Megoldás videó: <link xlink:href="https://bhaxor.blog.hu/2018/10/10/myrmecologist">https://bhaxor.blog.hu/2018/10/10/myrmecologist</link>
+            Megoldás forrása:              
         </para>
-        <para>
-            Megoldás forrása: <link xlink:href=""></link>               
+	<para>
+	<link xlink:href="https://github.com/pkristof1999/prog1/tree/master/Feladatok/Myrmecologist">Hangyaszimulációk (Forrás: Gitlab.com/nbatfai)</link>
         </para>
         <para>
             Tanulságok, tapasztalatok, magyarázat...
-        </para>            
-    </section>        
+        </para>   
+	<para>
+	A program a hangyák feromonokkal történő kommunkiációját szimulálja. A "main" futtatását a következőképp tegyük:
+	"./myrmecologist -w 250 -m 150 -n 400 -t 10 -p 5 -f 80 -d 0 -a 255 -i 3 -s 3 -c 22"-el lehet.
+	Az "AntThread" egy "QThread" osztályból származtaott osztály, mivel a számításokat a "main thread"-től,
+	ami a GUI-t kezeli, el akarjuk különíteni, így nem fagy le az Űrlapunk. Ez a Kolónia végzi a hangyák
+	mozgatását, alkalmaztatja a környezetre a hanygák által kibocsátott feromonokat. Ezekenfelül updateli a
+	"világot" is, csökkenti a világ feromonszintjét. Emiatt nem mondható tiszta OOP programnak.
+	Az AntWin nyílván a világot kezeli, olyan dolgokat ad hozzá a funkcionalitáshoz, mint
+	például a világra rács rajzolása, egyes zónák a világon (cell) berajzolása és ezeken felül maga világi tartalom
+	megjelenítése. Kezeli a GUI eseményeket is amiket lekövetünk.
+	</para>    
+     
+    </section>
     <section>
         <title>Java életjáték</title>
         <para>
@@ -68,16 +80,22 @@
     <section>
         <title>BrainB Benchmark</title>
         <para>
+            Megoldás forrása:              
         </para>
+	<para>
+	<link xlink:href="https://github.com/pkristof1999/prog1/tree/master/Feladatok/BrainB">BrainB Benchmark"</link>
+	</para>
         <para>
-            Megoldás videó: 
-        </para>
-        <para>
-            Megoldás forrása: <link xlink:href=""></link>               
-        </para>
-        <para>
-            Tanulságok, tapasztalatok, magyarázat...
-        </para>            
+        Tanulságok, tapasztalatok, magyarázat...
+        </para>    
+	<para>
+	A BrainB Benchmark feladata az e-sport tehetségek felkutatása lenne, úgy, hogy feltérképezi az agy kognitív
+	képességeit, és az elért pontszámok alapján össze lehet hasonlítani az egyes egyéneket. Maga a benchmark
+	a "karakterelvesztést" teszteli, vagyis ha a játékban elveszítjük a karakterünket, mennyi ideig tart 
+	megtalálnunk, és ha megtaláltuk, mennyi ideig tart elveszítenünk. Ideális esetben rövidebb ideig tart megtalálnunk,
+	mint elveszteni. A program azt is figyeli, hogy az egyes karakterelvesztésekhez milyen bit/sec képernyő-
+	váltások tartoznak.
+	</para>        
     </section>        
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
 </chapter>                
