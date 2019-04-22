@@ -40,10 +40,6 @@
 // 0.0.3, http://progpater.blog.hu/2011/03/05/labormeres_otthon_avagy_hogyan_dolgozok_fel_egy_pedat
 //
 
-
-                //>gcc z.c -lm -o z        fordítása
-                //>
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
@@ -54,7 +50,7 @@ typedef struct binfa
   int ertek;
   struct binfa *bal_nulla;
   struct binfa *jobb_egy;
-                //>itt definiáljuk a binfa típust
+
 } BINFA, *BINFA_PTR;
 
 BINFA_PTR
@@ -79,27 +75,16 @@ int
 main (int argc, char **argv)
 {
   char b;
-  int egy_e;
-  int i;
-  unsigned char c;
-                //>BinfaPTR== user által definiált típus
+
   BINFA_PTR gyoker = uj_elem ();
   gyoker->ertek = '/';
   gyoker->bal_nulla = gyoker->jobb_egy = NULL;
   BINFA_PTR fa = gyoker;
-  long max=0;
-while (read (0, (void *) &b, sizeof(unsigned char)))
+
+  while (read (0, (void *) &b, 1))
     {
-        for(i=0;i<8; ++i)
-        {
-            egy_e= b& 0x80;
-            if ((egy_e >>7)==0)
-                c='1';
-            else
-                c='0';
-        }
 //      write (1, &b, 1);
-      if (c == '0')
+      if (b == '0')
 	{
 	  if (fa->bal_nulla == NULL)
 	    {
@@ -131,11 +116,14 @@ while (read (0, (void *) &b, sizeof(unsigned char)))
 
   printf ("\n");
   kiir (gyoker);
-
+  
   extern int max_melyseg, atlagosszeg, melyseg, atlagdb;
   extern double szorasosszeg, atlag;
 
-  printf ("melyseg=%d\n", max_melyseg - 1);
+
+ 
+
+  printf ("melyseg=%d\n", max_melyseg-1);
 
   /* Átlagos ághossz kiszámítása */
   atlagosszeg = 0;
@@ -145,7 +133,7 @@ while (read (0, (void *) &b, sizeof(unsigned char)))
   // atlag = atlagosszeg / atlagdb;
   // (int) / (int) "elromlik", ezért casoljuk
   // K&R tudatlansági védelem miatt a sok () :)
-  atlag = ((double) atlagosszeg) / atlagdb;
+  atlag = ((double)atlagosszeg) / atlagdb;
 
   /* Ághosszak szórásának kiszámítása */
   atlagosszeg = 0;
@@ -158,7 +146,7 @@ while (read (0, (void *) &b, sizeof(unsigned char)))
   double szoras = 0.0;
 
   if (atlagdb - 1 > 0)
-    szoras = sqrt (szorasosszeg / (atlagdb - 1));
+    szoras = sqrt( szorasosszeg / (atlagdb - 1));
   else
     szoras = sqrt (szorasosszeg);
 
@@ -169,7 +157,7 @@ while (read (0, (void *) &b, sizeof(unsigned char)))
 
 
  // a Javacska ONE projekt Hetedik Szem/TudatSzamitas.java mintajara
- // http://sourceforge.net/projects/javacska/
+ // http://sourceforge.net/projects/javacska/ 
  // az atlag() hivasakor is inicializalni kell oket, a
  // a rekurziv bejaras hasznalja
 int atlagosszeg = 0, melyseg = 0, atlagdb = 0;
@@ -198,7 +186,7 @@ ratlag (BINFA_PTR fa)
 }
 
  // a Javacska ONE projekt Hetedik Szem/TudatSzamitas.java mintajara
- // http://sourceforge.net/projects/javacska/
+ // http://sourceforge.net/projects/javacska/ 
  // az atlag() hivasakor is inicializalni kell oket, a
  // a rekurziv bejaras hasznalja
 double szorasosszeg = 0.0, atlag = 0.0;
@@ -235,7 +223,7 @@ kiir (BINFA_PTR elem)
   if (elem != NULL)
     {
       ++melyseg;
-      _melyseif (melyseg > max_melyseg)
+      if (melyseg > max_melyseg)
 	max_melyseg = melyseg;
       kiir (elem->jobb_egy);
       // ez a postorder bejáráshoz képest
@@ -243,7 +231,7 @@ kiir (BINFA_PTR elem)
       for (int i = 0; i < melyseg; ++i)
 	printf ("---");
       printf ("%c(%d)\n", elem->ertek < 2 ? '0' + elem->ertek : elem->ertek,
-	      melyseg - 1);
+	      melyseg-1);
       kiir (elem->bal_nulla);
       --melyseg;
     }
