@@ -1,4 +1,4 @@
-<chapter xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xi="http://www.w3.org/2001/XInclude" version="5.0" xml:lang="hu">
+﻿<chapter xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xi="http://www.w3.org/2001/XInclude" version="5.0" xml:lang="hu">
     <info>
         <title>Helló, Schwarzenegger!</title>
         <keywordset>
@@ -7,45 +7,55 @@
     </info>
     <section>
         <title>Szoftmax Py MNIST</title>
-        <para>aa
-            Python
-        </para>
         <para>
-            Megoldás videó:
+            Megoldás forrása:
+	</para>
+	<para>
+	<link xlink:href="https://github.com/tensorflow/tensorflow/releases/tag/v0.9.0">Tensorflow</link>
+	</para>
+	<para>
+	<link xlink:href="https://progpater.blog.hu/2016/11/13/hello_samu_a_tensorflow-bol">Porgpáter</link>  
         </para>
-        <para>
-            Megoldás forrása:                
-        </para>
+	<para>
+	<link xlink:href="https://github.com/pkristof1999/prog1/blob/master/Feladatok/MNIST/smax.py">Szoftmax Py MNIST</link>
+	</para>
         <para>
             Tanulságok, tapasztalatok, magyarázat...
         </para>
+	<para>
+	Az MNIST egy adatbázis, mely kézzel írott számjegyeket tartalmaz.
+        Ezt általában képfelisemrő programokhoz szokták felhasználni.
+        A programot Python nyelven fordítjuk, viszont kell hozzá még a 
+        TensorFlow is, melyeket a következő sorokkal telepíthetünk:
+	</para>
+	<para>
+	sudo apt install python3-dev python3-pip
+	</para>
+	<para>
+	sudo pip3 install -U virtualenv  # system-wide install
+	</para>
+	<para>
+	virtualenv --system-site-packages -p python3 ./venv
+	</para>
+	<para>
+	source ./venv/bin/activate  # sh, bash, ksh, or zsh
+	</para>
+	<para>
+	pip install --upgrade pip
+	</para>
+	<para>
+	pip install --upgrade tensorflow
+	</para>
+	<para>
+	Az elején importáljuk a szükséges könyvtárakat.
+	</para>
+
     </section>        
 
-    <section>
-        <title>Szoftmax R MNIST</title>
-        <para>
-            R            
-        </para>
-        <para>
-            Megoldás videó:
-        </para>
-        <para>
-            Megoldás forrása:                
-        </para>
-        <para>
-            Tanulságok, tapasztalatok, magyarázat...
-        </para>
-    </section>        
 
     <section>
         <title>Mély MNIST</title>
         <para>
-            Python            
-        </para>
-        <para>
-            Megoldás videó:
-        </para>
-        <para>
             Megoldás forrása:                
         </para>
         <para>
@@ -53,35 +63,26 @@
         </para>
     </section>        
 
+
     <section>
-        <title>Deep dream</title>
+        <title>Minecraft-MALMÖ</title>
         <para>
-            Keras            
         </para>
         <para>
-            Megoldás videó:
+            Megoldás forrása:               
         </para>
-        <para>
-            Megoldás forrása:                
-        </para>
+	<para>
+	<link xlink:href="https://bhaxor.blog.hu/2018/10/28/minecraft_steve_szemuvege">Minecraft-MALMÖ</link>
+	</para>
         <para>
             Tanulságok, tapasztalatok, magyarázat...
         </para>
-    </section>        
-                  
-    <section>
-        <title>Robotpszichológia</title>
-        <para>
-        </para>
-        <para>
-            Megoldás videó:
-        </para>
-        <para>
-            Megoldás forrása:                
-        </para>
-        <para>
-            Tanulságok, tapasztalatok, magyarázat...
-        </para>
+	<para>
+	Ez egy Python nyelven megírt program a Minecraft nevű játékszoftverhez, melynek a lényege röviden az, hogy a programnak a játékon belül meg kell tennie x lépést úgy, hogy a játékosnak nem szabad 		elakadnia.
+	A program úgy működik, hogy a körülöttünk lévő blokkokat beolvassa, és amikor elakad, megnézi, hogy hol van a legközelebbi olyan blokk körülötte, amely irányában tovább tud akadálymentesen haladni,
+	ha nincs ilyen akkor pedig olyan blokkot keres amelyre fel tud ugrani (egy szintel fentebb lévő). A keresés úgy megy végbe, hogy a karakter elkezd jobb irányba fordulni, és az első olyan utat választja,
+	amely megfelel a kritériumoknak.
+	</para>
     </section>        
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
 </chapter>                
