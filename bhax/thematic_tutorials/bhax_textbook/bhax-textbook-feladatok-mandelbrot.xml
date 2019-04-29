@@ -1,4 +1,4 @@
-﻿<chapter xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xi="http://www.w3.org/2001/XInclude" version="5.0" xml:lang="hu">
+<chapter xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xi="http://www.w3.org/2001/XInclude" version="5.0" xml:lang="hu">
     <info>
         <title>Helló, Mandelbrot!</title>
         <keywordset>
@@ -117,7 +117,7 @@
 	Tanulságok, tapasztalatok, magyarázat...
         </para>
         <para>
-            Ez a feladat pontosan az előző feladatnak a java nyelven történő megvalósítása. (Erre a feladatra kaptam hibapontot..., úgyhogy nem folytatom a kiegészítését)
+            Ez a feladat pontosan az előző feladatnak a java nyelven történő megvalósítása. 
         </para>
     </section>
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         

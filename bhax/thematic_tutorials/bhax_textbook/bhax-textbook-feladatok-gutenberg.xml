@@ -1,4 +1,4 @@
-<chapter xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xi="http://www.w3.org/2001/XInclude" version="5.0" xml:lang="hu">
+﻿<chapter xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xi="http://www.w3.org/2001/XInclude" version="5.0" xml:lang="hu">
     <info>
         <title>Helló, Gutenberg!</title>
         <keywordset>
@@ -13,31 +13,25 @@
     <section>
         <title>Programozási alapfogalmak (Juhász István - Magas szintű programozási nyelvek 1)</title>
         <para> 
-            A magas szintű nyelven megírt programokat forrásszövegnek, a nyelvtani szabályokat 
-            pedig szintaktikai szabályoknak nevezzük. Frodítóprogrammal tudjuk fordítani, lexikális egységekre bontja 
-            tárgyprogramot hoz létre. Ezt majd futtatni kell, amit a futtató rendszer felügyel.
-            Az interpretes technika nem készí tárgyprogramot, utasításonként elemz a programot, értelmezi és 
-            végrehajtja. Minden nyeévnek megvan a saját szabvány, a hivatkozási nyelve. Az implementációk a 
-            forsítóprogramok vagy az interpreterek, egy platformon több is lehet belőlük.  
-            Imperatív nyelvek: algoritmus mely mülködteti a processzort, utasítások, változók, 
-            eljárásorientált- és objektumorientált nyelvek. Deklaratív nyelvek: nem kötődnek a Neumann 
-            architektúrához, funkcionális- és logikai nyelvek.
-            Jelölésrendszerek: terminális, nem terminális, alternatíva, opció, iteráció.
-            Ezekkel szintaktikai szabályoka lehet írni: bal oldalon nem formális, :, majd elemsorozat.
-            Programozni megtanulni papíron nem lehet.
-            Az adattípus absztrakt programozási eszköz, más eszköz  komponenseként jelenik meg. 
-            Az adattípust a tartomány (amilyen típust felvehet), a művelet (amit a tartomány elemein 
-            elvégezhet) és a reprezentáció (az értékek tárban való megjelenése) határoz meg.
-            A programozó is definiálhat típusokat. Az alaptípusból tudunk más típust (alaptípust) 
-            származtatni, szűkített tartománnyal de ugyanolyan műveletekkel.
-            Az egész típus belső ábrázolása fixpontos, a valósé lebegőpontos. A két típus együtt 
-            a numerikus típusok, mivel numerikus műveletek hajthatók rajtuk végre
-            A karakrer típus elemei a karakterek, a karakterlánccé pedig a sztringek. 
-            A logikai típus tartományának elemei a hamis és az igaz érékek. A felsorolás típust saját 
-            típusként lehet létrehozni, megadva  atrtomány elemeit. Sorszámozott típusnak számít az 
-            egesz, karakteres, logikai és felsorolás típusok (minden elemnek van megelőzője és rákövetkezője).
-            A sorszámozottak egy alaptípusa az intervallum típus.
-            Folyamatban...
+Alapvetően három szintet különböztetünk meg amikor programozási nyelvekről beszélünk: a gépi szintű, az assembly szintű és a magas szintű.
+A magas szintű programokat "source code"-nak (forráskódnak) nevezzük, továbbá ezek nyelvtani szabályait szintaktikai, míg értelmezési szabályait szemantikai szabályoknak nevezzük.
+Ezeket a forrásokat ún. fordítóprogramokkal tudjuk fordítani, mely lexikális elemzés folyamán gépi nyelvet állít elő, amelyet a futtató szoftver működtet a későbbiekben.
+Létezik egy Interpreteres megoldás is, mely nem gépi nyelvre fordít, hanem utasításonként elemzi a és hajtja végre a megadott forrást.
+Az összes nyelvnek létezik saját hivatkozási nyelve.</para><para>
+Imperatív nyelvnek nevezzük azt, ha egy olyan algoritmusról van szó, amely működteti a processzort, utasításokat hajt végre. A fő cél az eljárás vagy az objektum végrehajtása. Emellett beszélhetünk még deklaratív nyelvekről is, melyek lényegében logikai, funkcionális nyelvek: szemantikai szabályok megírására szolgálnak. Fontos, hogy itt a programozó nem tud közvetlen hozzáférni a memóriához, vagy azzal műveleteket végezni.</para><para>
+Az adattípus olyan programozási összetevő, mely lehet érték, vagy akár literál is.
+Absztrakt adattípusról beszélünk, ha a reprezentáció és a műveletek implementációja számunkra ismeretlen. Jellemzően három összetevő alkotja: a tartomány (típus, amit felvesz (akár maga a programozó személy is adhat meg típust)), az ehhez tartozó műveletek (amit azon elemeken tud végrehajtani, melyek részét képezik a megadott tartománynak) és a reprezentáció (az értékek megjelenítése).
+Az alaptípussal tudunk -habár nem akkora tartománnyal, de megegyező műveletekkel- más típust is leképezni.</para><para>
+Az I/O függ az operációs rendszertől és az implementációtol. Ennek a feladata a memóriába küldeni, vagy onnan fogadni az adatokat.
+A karakter típus részei a karakterek, melyeknek láncait pedig "string"-nek nevezük.
+Az egész típus fixpontos ábrázolású, még a valós típusé lebegő pontos (float point). Ezek a numerikus típusok abból eredően, amilyen műveleteket tudunk velük végrehajtani.
+Harmadik ilyen típus a logikai, amelynek elemei a 0 vagy 1 (hamis vagy igaz).
+A mutató típus segítségével egy megcímzett terület értékét érhetjük el.
+A nevesített konstans három összetevője a név, az érték és a típus.</para><para>
+A változó a fentebb említett imperatív nyelvek egyik fő eszköze, melynek négy komponense van: a cím, érték, az attribútumok és maga a változó neve. Többszörös tárhivatkozásról beszélhetünk akkor, ha egy időben két nem megegyező nevű változó azonos cím és értékkomponenssel rendelkezik.</para><para>
+Az ún. kifejezések szintaktikai metódusok, ezek egészét a típus és az érték adja, komponensei a hagyományos zárójelek "()", az operátor és az operandus. A logikai operátorral bíró kifejezéseknél nem hajtjuk végre az összes műveletet, akkor, ha a művelet elején el lehet dönteni, hogy mi lesz a végeredmény, például ha a művelet első és második része "vagy"-gyal van összekötve, és tudjuk, hogy az első fele igaz, akkor már nem vizsgáljuk a másik felét, mert a végeredmény biztosan igaz.</para><para>
+A forrás lépéseit utasításokkal adhatjuk meg, melyek lehetnek deklarációs vagy végrehajtató típusúak is. Deklarációsnál -a fordító program segítségével- a gépi kód végrehajtható utasításokból jön létre. Utasításra példának a "Ha-különben (if-else)" elágazást tudom felhozni, mely megvizsgál egy feltételt, és ha hamisnak bizonyul, akkor az else ágon halad tovább.</para><para>
+Blokk az a programrész, mely egy másik programrész belsejében helyezkedik el, ugyanis ez nem lehet független/különálló. A blokk nem rendelkezhet paraméterrel, de használható ott, ahol végrehajtható utasítás is jelen van.
         </para>
     </section> 
            
@@ -57,7 +51,7 @@
             A printf("Figyelem emberek\n") függvényhívás a kimenetbe írja a Figyelem emberek szöveget, a végére pedig egy sortörést.
             Egysoros kommentet a //-el, többsorosat pedig a /* */ jelek segítségével hozunk létre. Az int az egész, a float a lebegő, char a karakter, 
             stb típusú váltózókat jelöli. Sorok végét ;-vel zárjuk le.
-            Folyamatban...
+            
         </para>
   
     </section>  
@@ -66,7 +60,7 @@
     <section>
         <title>Programozás (Benedek Zoltán, Levendovszky Tihamér: Szoftverfejlesztés C++ nyelven)</title>
         <para>
-            Folyamatban...
+            
         </para>
     </section>   
 </chapter>                

@@ -83,7 +83,7 @@
         </revremark>
     </revision>
     <revision>
-    <revnumber>0.1.1</revnumber>
+    <revnumber>0.2.0</revnumber>
         <date>2019-03-17</date>
         <authorinitials>pkristof1999</authorinitials>
         <revremark>
@@ -91,7 +91,7 @@
         </revremark>
     </revision>
     <revision>
-    <revnumber>0.1.2</revnumber>
+    <revnumber>0.3.0</revnumber>
         <date>2019-03-18</date>
         <authorinitials>pkristof1999</authorinitials>
         <revremark>
@@ -99,11 +99,61 @@
         </revremark>
     </revision>
     <revision>
-    <revnumber>0.1.3</revnumber>
+    <revnumber>0.4.0</revnumber>
         <date>2019-03-25</date>
         <authorinitials>pkristof1999</authorinitials>
         <revremark>
             Mandelbrot csokor labor feladatainak elkészítése, Gutenber csokor elkezdése.
         </revremark>
     </revision>
+    <revision>
+    <revnumber>0.5.0</revnumber>
+        <date>2019-03-31</date>
+        <authorinitials>pkristof1999</authorinitials>
+        <revremark>
+            Welch feladatcsokor elkészítése.
+        </revremark>
+    </revision>
+    <revision>
+    <revnumber>0.6.0</revnumber>
+        <date>2019-04-6</date>
+        <authorinitials>pkristof1999</authorinitials>
+        <revremark>
+            Welch feladatkörön történő finomítások, Convay csokron történő dolgozás.
+        </revremark>
+    </revision>
+    <revision>
+    <revnumber>0.7.0</revnumber>
+        <date>2019-04-12</date>
+        <authorinitials>pkristof1999</authorinitials>
+        <revremark>
+            Schwarzenegger csokor elkészítése.
+        </revremark>
+    </revision>
+    <revision>
+    <revnumber>0.8.0</revnumber>
+        <date>2019-04-21</date>
+        <authorinitials>pkristof1999</authorinitials>
+        <revremark>
+            Chaitin csokor tanulmányozása, előző csokrok apróbb javítása, helyesírás ellenőrzés dokumentum szinten.
+        </revremark>
+    </revision>
+    <revision>
+    <revnumber>0.9.0</revnumber>
+        <date>2019-04-27</date>
+        <authorinitials>pkristof1999</authorinitials>
+        <revremark>
+            Chaitin csokor kidolgozása, Gutenberg finomítása, kiegészítése, átalakítása.
+        </revremark>
+    </revision>
+<!--
+    <revision>
+    <revnumber>1.0.0</revnumber>
+        <date>2019-05-05</date>
+        <authorinitials>pkristof1999</authorinitials>
+        <revremark>
+            Újabb dokumentumszintű ellenőrzés, Gutenberg csokor véglegesítése párhuzamosan a könyv befejezésével.
+        </revremark>
+    </revision>
+-->
 </revhistory>
