@@ -39,19 +39,15 @@ Blokk az a programrész, mely egy másik programrész belsejében helyezkedik el
     <section>
         <title>Programozás bevezetés (Kernighan Ritchie - A C programozási nyelv)</title>
         <para>
-            Annak a módja, hogy egy programozási nyelvet elsajátítsunk, nem más mint higy programokat írjunk az adott nyelven. 
-            A C nyleg tanulását is kezdjük úgy, mint más nyelvek tanulása esetén, a legegyszerűbb programmal a 
-            Hello World magyar változatával. Fordítjuk: cc figyel.c, majd futtatjuk: ./a.out. 
-            Mivel a cc-vel fordítottuk ezért egy alapértelmezett kimenetbe megy az a.out-ba. 
-            A C programok tetszőleges nevű függvényeket tartalmaznak amelyek a számítási műveleteket határozzák meg. 
-            Speciális függvény a main (főprogram) mely minden programban elő kell forduljon. 
-            Itt hívjuk meg az előre megírt függvényeket, vagy itt írjuk meg. A program olyan sorrendben végzi el 
-            az utasításokat ahogy azok a main-be vannak. A függvény neve után szereplő () az argumentum listát tartalmazza, 
-            a {} pedig az utasítás listát (lehetnek üresek is). 
-            A printf("Figyelem emberek\n") függvényhívás a kimenetbe írja a Figyelem emberek szöveget, a végére pedig egy sortörést.
-            Egysoros kommentet a //-el, többsorosat pedig a /* */ jelek segítségével hozunk létre. Az int az egész, a float a lebegő, char a karakter, 
-            stb típusú váltózókat jelöli. Sorok végét ;-vel zárjuk le.
-            
+            Bevezetésként leszögezhetjük a következő nagy igazságot: a C nyelv elsajátításának a legjobb módja, ha abban minél több programot írunk meg.
+            A C nyelv alapjait adják annak vezérlési elvei: a kapcsos zárójel tartalmazza az utasítás blokkokat,
+            egy sor akkor lesz utasítás, amikor pontosvesszőt teszünk a végére. Minden ilyen változónak betűvel kell kezdődnie.</para><para> If-else elágazásnál először a nyelv kiértékelést végez, amely igaz esetén
+            az első blokkot, hamis esetén az else ágon lévő utasításokat hajtja végre. Ha az else-t megtoldjuk még egy if-fel (else if), akkor az else ágon is kiértékelést fog végezni a program.
+            A switch ehhez hasonló, többirányú elágazásoknál használjuk, amelynél valamilyen állandó értéket használva rendeljük hozzá az utasítást. While ciklusnál a ciklusmag addig ismétlődik, amíg
+            el nem éri a megadott paramétert a kód, egyszóval hamis lesz, a do-while ettől annyiban különbözik, hogy ott egyszer mindenképp lefut a ciklus. Ehhez nagyon hasonlít a for ciklus is, amely hasonló módon addig fut, amíg egy megadott kritériumot el nem ér.</para><para>
+            A break utasítással kiléphetünk a while, a for vagy a do-while ciklusmagjából is, melyeket az ebben lévő continue paranccsal akár folytathatunk is. Az utolsó ilyen utasítás a goto, amellyel megadott pontra ugordhatunk,
+            ami akkor előnyös, ha egymásba ágyazott ciklusokból szeretnénk kilépni.</para><para>
+            A C nyelvben tudunk összetett utasításokat is írni, melynek lényege, hogy több különböző utasítást egyetlen utasításként tud kezelni.
         </para>
   
     </section>  
@@ -60,8 +56,35 @@ Blokk az a programrész, mely egy másik programrész belsejében helyezkedik el
     <section>
         <title>Programozás (Benedek Zoltán, Levendovszky Tihamér: Szoftverfejlesztés C++ nyelven)</title>
         <para>
-            
-        </para>
+            Napjainkban is a C++ egy elég népszerű programozási nyelv, sok területen használják. Alapjait a C nyelvből meríti.
+            C++ nyelvnél a void paraméter megadásával érhetünk el üres paraméterlistát, mely törzsében írhatjuk meg a kívánt függvényeket.
+        </para><para>Szabványosan egy program formája a következő: "int main(){...}", de ha argumentumokkal is akarunk dolgozni, akkor a következőképp
+            is megoldható: "int main(int argc, char* argv[])".
+        </para><para>
+            Új típussal is találkozhatunk a C-hez képest, mégpedig a bool típussal, mely logikai változó, igaz vagy hamis értékeket vehet fel.
+            Ez átláthatóbb kódot eredményezhet megfelelő használat mellett, mivel lehetőség van az operátorok és függvénynevek logikai és egész típusokra való túlterhelésére.
+            Van autómatikus konverzió is, ahol a 0 a hamisat jelöli, nem 0 pedig az igazat.</para><para>
+            Másik új típus az ún. wchar_t is, mely beépített típus és több sok bájtos karakterek tárolására alkalmas. Beépítettség révén típusmegadásra nincs szükség.</para><para>
+            Míg C nyelvben nem tudtuk a függvényeket túlterhelni, C++ használatánál ez már lehetségessé vált. Van rá lehetőség, hogy azonos elnevezésű, de eltérő argumentum
+            listájú függvényeket vezessünk be. Továbbá az argumentumok listájában szereplő argumentumoknak adhatunk alapértelmezett értéket is, ha hívásnál nem adunk meg ettől eltérő argumentumot.</para><para>
+            Az új referenciatípusnak köszönhetően a C-hez képest -ahol érték által meghatározott paraméterátadás zajlik- itt referencia általi paraméterátadás is lehetséges. Ez egyébként nagyon hasonlít arra az esetre,
+            mintha mutatót használnánk, viszont referenciánál nincs szükség arra, hogy képezzük a változó címét, valamint ugyanúgy használhatjuk azt a szintaktikát, amely nem mutatóhoz van felépítve.</para><para>
+            C++ nyelvben tudunk használni előre megadott sablonokat is, melyek a megszokott C++ típusok nyelvi megfelelői. Legjellemzőbben ezeket olyan területeken használjuk, amelyek tárolóosztályok és
+            bármilyen fajtájú elem eltárolására hívatottak. Fontos tudni, hogy egy sablonparaméter mindössze egy típust jelölhet, ha implicit a megnyílvánulási típus.</para><para>
+            A C++ streamekkel, bájtok sorozatával dolgozik (adatfolyamok). Az input (istream) kizárólag olvasható, míg az output (ostream) csak írható streamek. Az adatfolyamok használatához elengedhetetlen az "iostream" meghívása a program elején.
+            Mivel a rendszerhívások igen erőforrásigényesek, így bevezették a buffereket, melyek lényege, hogy több kiíratást egyszerre végez el. Ürítése lehetséges, melyet megvalósíthatunk a "flush" paranccsal.</para><para>
+            C++ nyelvben találkozhatunk ún. manipulátorokkal is, melyek nevükhöz híven képesek manipulálni az I/O folyamatokat. Használatukhoz ne felejtsük el az "iomanip"-ot meghívni. Ilyen manipulátor még a cout sorok végén szokásosan használt endl is,
+            mely amellett hogy sorvégi karakterrel zár, még a buffert is kiürití. Másik elterjedt manipulátor még a setprecision is, mely segít a lebegőpontos számok pontosságának belövéséhez, valamint ez az endl-al szemben rendelkezik még paraméterrel is.</para><para>
+            Fentebb említve volt, hogy az I/O-hoz adatfolyamokat használ a C++, ugyanígy az állománykezeléshez is. Ez többnyire különálló fájlok írását és olvasását jelenti. Az ilyen fájlok megnyitását a kontstruktorok végzik, bezárásukat pedig a destruktorok.
+            Használatához meg kell hívni az fstream fejlécet, majd értelemszerűen használni az ofstream és az ifstream osztályokat. Kiegészítésül hozzáteszem, hogy úgy is megnyithatunk és bezárhatunk állományokat, hogy az open/close párost használjuk.</para><para>
+            C-hez képest kibővült a típuskonverzió is: 1-ről 4-re. Egyik ilyen az enumra való konvertálás intről, ahol viszont szükség van a konverzió kiírására is. Másik ilyen a double és az int között lezajló átalakítás, amely ha nem referencia vagy memóriacím, akkor autómatikus.
+            Ha konvertálni szeretnénk az osztályunkra egy másik típusról, akkor szükségünk lesz egy konverziós konstruktorra is. Fordított esetben pedig nem a konstruktor, hanem a konzveriós operátor fog megoldásul szolgálni. A dinamikus konverzió egy örökletesen hierarchikusan lefelé tartó konverzió,
+            mely minimum egy virtuális függvényt kell hogy tartalmazzon, osztályainak pedig polimorfoknak kell lenniük. A konstans konverzió képes konstansból nem konstanst és volatile-ból ellenkezőjét konvertálni, legvégül pedig az újraértelmező konverziót nézzük: ezt szükségeltetik használni,
+            ha implementációfüggő konverzió esetéről beszélünk.</para><para>
+            Amikor programozunk fontos, hogy figyelembe vegyük azt, hogy hibázni fogunk, mellyel ha nem foglalkozunk kellőképp, akkor saját magunknak okozunk bosszúságot a későbbiekben. C++ nyelvben a hibák kiíratására létezik egy try-catch nevezetű kivételkezelési blokk,
+            mely hibáink kiíratását hivatott könnyebbé tenni. Azt persze nekünk kell kitölteni, hogy ez mégis milyen hibákat legyen képes "elkapni", viszont még így is nagyban hozzájárul a hibakeresés egyszerűsítéséhez. Mivel egy programban több hibajelenség is lehet egyszerre, így egy try-hoz több catch ágat
+            is megadhatunk, és amint valamilyen hibát észlel a fordító program, ezen ágak segítségével hamar meg is tudhatjuk, hogy mire figyeljünk oda javításnál.
+            </para>
     </section>   
 </chapter>                
 

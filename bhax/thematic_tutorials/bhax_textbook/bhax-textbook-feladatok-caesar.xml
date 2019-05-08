@@ -1,4 +1,4 @@
-<chapter xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xi="http://www.w3.org/2001/XInclude" version="5.0" xml:lang="hu">
+﻿<chapter xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xi="http://www.w3.org/2001/XInclude" version="5.0" xml:lang="hu">
     <info>
         <title>Helló, Caesar!</title>
         <keywordset>
@@ -17,12 +17,19 @@
         </para>
         <para>
             <link xlink:href="https://github.com/pkristof1999/prog1/blob/master/Feladatok/matrix.c">Háromszögmátrix</link>
-        </para>                    
+        </para>
+        <para>
+            <link xlink:href="https://gitlab.com/nbatfai/bhax/blob/master/thematic_tutorials/bhax_textbook_IgyNeveldaProgramozod/img/doublecscs.png?fbclid=IwAR1oSpWNrTkDfGqsJXaXoUR4NgP73gci1ffidazhUu5C3ZjUB5WJWZkuOd0">Kép (Forrás: https://gitlab.com/nbatfai)</link>
+        </para>                  
         <para>
             Tanulságok, tapasztalatok, magyarázat...
         </para>      
         <para>
-            A program egy olyan négyzetes mátrix (négyzetes mátrix: sorainak és oszlopainak a száma megegyezik) alsó háromszögét számítja ki, melynek a főátló felett kizárólag nulla áll. A program a memóriában 40 bájtot foglal le a malloc fügvény segítségével.
+            A program egy olyan négyzetes mátrix (négyzetes mátrix: sorainak és oszlopainak a száma megegyezik) alsó háromszögét számítja ki, 
+            melynek a főátló felett kizárólag nulla áll. Maga a forrás lényegében a következő:
+            A program a memóriában 40 bájtot foglal le a malloc függvény segítségével, melyet a végén a free függvénnyel fel is fogunk szabadítani, 
+            ami azért fontos, mert ha nem állna meg a program, akkor egy idő után betelne a számítógép memóriája. Majd megadjuk az 5 sorból álló alsóháromszögünket és 
+            printf segítségével kiíratjuk a számokat.
         </para>      
     </section>        
     <section>
@@ -100,12 +107,12 @@
             Tanulságok, tapasztalatok, magyarázat...
         </para>  
         <para>
-            (Tutorom Pataki Donát) Ezt a programot az R nyelvben írtuk. A program elnevezése utal az agy összetevőjére, a neuronokra, melyek feladata az elektromos összeköttetés.
-            A neurális háló az, "ahol" and, "or" és "exor" kapuk vannak beágyazva. Az "and" és az "or" működése egyértelmű. ̋
-            Az előbbinél ha mindkettő 1 akkor lesz az eredményük az 1. Utóbbinál, ha az egyik 1 akkor lesz az  ̋
-            eredményük az 1. "Exor"-nál pedig ha a két érték nem egyezik meg (0 és 1 esetén), akkor
-            lesz az eredmény 1 és ez fordított esetben is igaz. A neurális hálór 3 részre lehet osztani. Van az "input layer", ahol megkapja az adatokat, a "hidden
-            layer", ahol a varázslat történik és az "output layer", ahol ha minden jól működik a megfelelő értékeket kapjuk vissza.
+            (Tutorom <link xlink:href="https://github.com/DonatPataki">Pataki Donát</link>) A következő programot R nyelven írjuk. A program megnevezése utal az agyunk alkotóelemére, a neuronokra.
+            A neurális hálónál "and, "or" és "exor" kapuk vannak beágyazva. Az "and" és az "or" működése a következőképp zajlik, egyébként ezek igen egyszerű elven alapszanak: ̋
+            az "and" kapunál ha mindkettő 1 akkor lesz az 1 a végeredmény, "or" kapunál az 1 eredményhez elégséges feltétel, ha csak az egyik 1.
+            "Exor"-nál a végeredmény akkor lesz 1, amikor a két változó nem egyezik meg, például 1 és 0.
+            Három részre lehet a neurális hálót osztani osztani, mégpedig: az "input layer", ahol adatokat kapja, a "hidden
+            layer", melyben fut a program magja és a "varázslat" történik, valamint az "output layer", ahol ha a program nem ütközik hibába, akkor az eredményt kapjuk.
         </para>          
     </section>        
     <section>
@@ -120,14 +127,11 @@
             Tanulságok, tapasztalatok, magyarázat...
         </para>   
         <para>
-           (Tutorom Pataki Donát) A perceptron egy algoritmus model, amely az emberi agy muködését próbálja utánozni.
-           Hasonló a neurális hálóhoz azonban van pár különbség. Ugyanúgy "input" után elkezd "varázsolni" és jobb esetben,
+           (Tutorom <link xlink:href="https://github.com/DonatPataki">Pataki Donát</link>) A perceptron egyfajta algoritmus, amely az emberi agy működésének a modeljét akarja utánozni.
+           A neurális hálóhoz hasonlítható, viszont van pár eltérés. Itt is legelőször az "input" van, ahol az adatokat kapja, majd a maga a kód a második szint, melyet
            ha megfelelő a mintavétel, akkor helyes eredményt ad vissza. Azonban a középső értékeknek van súlya, amit  ̋
-           még adott konstansokkal is ki lehet egészíteni. Az így kapott súlyokat összeadja és ha ez elér egy bizonyos
-           szintet, akkor a program adott része aktiválódik és egy  lineáris folyamat amely addig ismétlodik, amíg el nem jut a  ̋
-           válaszig.
+           akár konstansokkal is kiegészíthetünk. A megkapott súlyokat összeadja, majd amikor ez az összeg megüt egy bizonyos értéket,
+           akkor a kód egy másik része aktiválódik, ezután pedig elindul egy lineáris folyamat amely ismétli önmagát egészen addig, amíg meg nem kapja a kívánt választ.
         </para>         
-    </section>        
-        
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+    </section>                                                                              
 </chapter>                

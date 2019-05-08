@@ -1,4 +1,4 @@
-<chapter xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xi="http://www.w3.org/2001/XInclude" version="5.0" xml:lang="hu">
+﻿<chapter xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xi="http://www.w3.org/2001/XInclude" version="5.0" xml:lang="hu">
     <info>
         <title>Helló, Conway!</title>
         <keywordset>
@@ -18,18 +18,16 @@
 	<link xlink:href="https://github.com/pkristof1999/prog1/tree/master/Feladatok/Myrmecologist">Hangyaszimulációk (Forrás: Gitlab.com/nbatfai)</link>
         </para>
         <para>
+	<link xlink:href="https://github.com/pkristof1999/prog1/blob/master/Feladatok/MNIST/lvl6.jpg">SMNISTforHumans lvl. 6</link>
+        </para>
+        <para>
+	<link xlink:href="https://github.com/pkristof1999/prog1/blob/master/Feladatok/MNIST/lvl10.jpg">SMNISTforHumans lvl. 10 (update)</link>
+        </para>
+        <para>
             Tanulságok, tapasztalatok, magyarázat...
         </para>   
 	<para>
-	A program a hangyák feromonokkal történő kommunkiációját szimulálja. A "main" futtatását a következőképp tegyük:
-	"./myrmecologist -w 250 -m 150 -n 400 -t 10 -p 5 -f 80 -d 0 -a 255 -i 3 -s 3 -c 22"-el lehet.
-	Az "AntThread" egy "QThread" osztályból származtaott osztály, mivel a számításokat a "main thread"-től,
-	ami a GUI-t kezeli, el akarjuk különíteni, így nem fagy le az Űrlapunk. Ez a Kolónia végzi a hangyák
-	mozgatását, alkalmaztatja a környezetre a hanygák által kibocsátott feromonokat. Ezekenfelül updateli a
-	"világot" is, csökkenti a világ feromonszintjét. Emiatt nem mondható tiszta OOP programnak.
-	Az AntWin nyílván a világot kezeli, olyan dolgokat ad hozzá a funkcionalitáshoz, mint
-	például a világra rács rajzolása, egyes zónák a világon (cell) berajzolása és ezeken felül maga világi tartalom
-	megjelenítése. Kezeli a GUI eseményeket is amiket lekövetünk.
+	Ezt a feladatot szeretném passzolni azzal a passzolási lehetőségemmel, amelyet az SMNISTforHumans nevezetű alkalmazásban, a 6-os szint elérésével szereztem.
 	</para>    
      
     </section>
@@ -52,7 +50,7 @@
             Tanulságok, tapasztalatok, magyarázat...
         </para> 
         <para>
-            A Conway-féle sejtautómatát kellett a feladatban elkészíteni. A program egy 2 dimenziós koordinátarendszerben dolgozik, 
+            (Tutorom <link xlink:href="https://github.com/ratkudani">Ratku Dániel</link>) A Conway-féle sejtautómatát kellett a feladatban elkészíteni. A program egy 2 dimenziós koordinátarendszerben dolgozik, 
             amelyben találhatók az ún. sejtek, amelyek vagy "élő" vagy "halott" (0 v. 1) sejtek. Egy véletlenszerű vagy előre meghatározott állapot
             indítja el az életjátékot, majd több iteráció fut le (ahol minden iteráció meghatároz egy sejtet). Habár egyszerű szabályokkal
             és akár véletlenszerűekkel is le lehet futtatni, mindig egyedi formák és viselkedéstípusok emelkednek ki a rácsból.
@@ -73,8 +71,13 @@
             Tanulságok, tapasztalatok, magyarázat...
         </para>
         <para>
-            Ebben a feladatban az előző feladat megvalósítása volt a dolgunk c++-ban a Qt környezet segítségével. Ez komplexebb megvalósítás,
+            Ebben a feladatban az előző feladat megvalósítása volt a dolgunk C++-ban a Qt környezet segítségével. Ez komplexebb megvalósítás,
             mint a java-s megoldás, viszont a működési elve ugyanaz.
+        </para>
+        <para>
+            A játék alapja a cellák és a sejtek, és a sejtautómata csipán pár egyszerű szabály alapján működik: a sejt akkor éli túl a kört,
+            ha legalább 2 szomszédja van; ha nincs meg az előző feltétel akkor a sejt elpusztul, de akkor is, ha 3-nál több szomszédja van;
+            új sejt jön létre abban a cellában, akkor, ha 3 sejt van ott jelen.
         </para>            
     </section>        
     <section>
@@ -83,18 +86,17 @@
             Megoldás forrása:              
         </para>
 	<para>
-	<link xlink:href="https://github.com/pkristof1999/prog1/tree/master/Feladatok/BrainB">BrainB Benchmark"</link>
+	<link xlink:href="https://github.com/pkristof1999/prog1/tree/master/Feladatok/BrainB">BrainB Benchmark</link>
 	</para>
         <para>
         Tanulságok, tapasztalatok, magyarázat...
         </para>    
 	<para>
-	A BrainB Benchmark feladata az e-sport tehetségek felkutatása lenne, úgy, hogy feltérképezi az agy kognitív
-	képességeit, és az elért pontszámok alapján össze lehet hasonlítani az egyes egyéneket. Maga a benchmark
-	a "karakterelvesztést" teszteli, vagyis ha a játékban elveszítjük a karakterünket, mennyi ideig tart 
-	megtalálnunk, és ha megtaláltuk, mennyi ideig tart elveszítenünk. Ideális esetben rövidebb ideig tart megtalálnunk,
-	mint elveszteni. A program azt is figyeli, hogy az egyes karakterelvesztésekhez milyen bit/sec képernyő-
-	váltások tartoznak.
+        A BrainB Benchmark létrejöttének a célja az, hogy felkutassa az e-sport tehetségeket, úgy, hogy az agy kognitív
+	képességeit feltérképezi, majd ennek segítségével az egyénenként elért pontszámokkal összehasonlítás végezhető. Maga a program
+	a karakterelvesztést figyeli, vagyis ha a játékban elveszítjük a saját karakterünket, akkor mennyi ideig tart, amíg
+	megtaláljuk azt, és ha megtaláltuk, akkor mennyi ideig tart az, hogy ismét elveszítsük. Jobb esetben rövidebb ideig tart az, hogy megtaláljuk,
+	minthogy elveszítsük a karakterünket. A program továbbá azt is nézi, hogy a karakterelvesztésekhez mekkora b/s képernyőváltások társulnak.
 	</para>        
     </section>        
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              

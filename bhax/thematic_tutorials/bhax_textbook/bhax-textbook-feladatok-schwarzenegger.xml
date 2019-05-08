@@ -47,9 +47,10 @@
 	pip install --upgrade tensorflow
 	</para>
 	<para>
-	Az elején importáljuk a szükséges könyvtárakat.
-	</para>
-
+	A TensorFlow-ot a Google fejlesztette ki, ez egy nagyon flexibilis kód, jól használható, leginkább a gépi tanulásban és neurális hálóknál van alkalmazva.
+	Maga a feladat neurális háló rétegeiből épül fel, mely a bemeneti adatokból információkat olvas ki és tárol.
+        A program "tanítása" lépésekben történik, majd ha elkészült a program, akkor tesztelhetjük néhány képpel az MNIST adatbázisból, hogy sikeres lett-e a TensorFlow-os tanításunk. 
+        </para>
     </section>        
 
 
@@ -67,12 +68,11 @@
         <para>
             Tanulságok, tapasztalatok, magyarázat...
         </para>
-	<para>
-(Tutorom Ratku Dániel) Lényegbe foglalva a feladatban szereplő témát, segítségűl hívom az előbbi feladat során szerzett ismereteinket. Rövid bevezőként némi összehasonlítás során megállapíthatjuk, hogy a jelenlegi kiértékelendő koncepciónkban egy többrétegő soft mnist-et kapunk, ami ebből adódóan pontosabban végzi el a kapott műveleteket amelyeket beleimplementáltunk és meghatároztunk. Továbbá némi "hátrányt" is megfigyelhetünk, amit a megfigyeléseink során a nagyobb erőforrásigényben találhatunk meg. Ismeeretünket kiterjesztve közlendő, hogy a TensorFlow egy nagyon erős könyvtár, ami a széles skálájú számokkal dolgozik. Ezáltal is elősegítve az implementáló és tanuló mély neutrális működést.
-        </para>
-        <para>
-            Kezdésként fontos tisztázni, hogy az első két sor feltétlenül szükséges, mivel boilerplate-ként szerepel jelen esetben. Ugyanis ezáltal töltünk és olvasunk adatot atomataként. A következő pár sor fogja tartalmazni a kiszámítási gráf építését fogja lekreálni, és a futtató gráfot is. Tovább építve szükséges a Softmax Regressziós Modelt, ahol egy gyökérpontokat készítünk a bemeneti képhez és a célkimeneti osztályokhoz. Ezeket az x és y_ változókkal jelöljük. Az első változó értéke a 28*28-as pixeles MNIST-es képet jelöli. A tanulás maga a model kereteiben belül zajlik majd le. 
-        </para>
+	<para>(Tutorom <link xlink:href="https://github.com/ratkudani">Ratku Dániel</link>)
+        Az előző feladat segítségével fogom kifejteni ennek a megoldásnak a lényegét röviden.
+        Összehasonlítva az első feladattal, itt a bevitt adatokat sokkal nagyobb hatásfokkal ellenőrzi a feladat egy több rétegű soft MNIST során, bár ez lassabb lehet mint a sima MNIST, mivel pontosság révén ez több erőforrást is igényel. A TensorFlow széles skálában dolgozik a számokkal, amely elősegíti a "tanítás" mély neurális működését.
+        </para><para>
+        Az első két sor adja a program alapját, ezt boilerplate-nek nevezzük, mivel ennek segítségével olvashatjuk az adatokat, majd az ezt követő néhány sor tartalmazza a program magját, azaz lekreálja a kiszámítási gráfot és a futtató gráfot is. Majd ezeket tovább építve kapjuk meg a Regressziós Modelt, mely segítségével gyökérpontokat adunk meg a bemeneti ábrához és a kimeneti osztályokhoz, ezeket x és y változóknak kereszteljük, melyek közül az első a 28×28-as méretű MNIST-es ábrát jelöli. A tanulás lezajlása a modellen belül történik.</para>
     </section>        
 
 

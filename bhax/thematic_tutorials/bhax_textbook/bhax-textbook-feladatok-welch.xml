@@ -1,4 +1,4 @@
-<chapter xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xi="http://www.w3.org/2001/XInclude" version="5.0" xml:lang="hu">
+﻿<chapter xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xi="http://www.w3.org/2001/XInclude" version="5.0" xml:lang="hu">
     <info>
         <title>Helló, Welch!</title>
         <keywordset>
@@ -23,7 +23,7 @@
             Tanulságok, tapasztalatok, magyarázat...
         </para>  
         <para>
-            Ebben a programban polártranszformáció segítségével véletlenszerű számokat tudunk kiszámolni. A Java véletlenszerű-szám generátora is ezt használja.
+            (Tutorom <link xlink:href="https://github.com/ratkudani">Ratku Dániel</link>) Ebben a programban polártranszformáció segítségével véletlenszerű számokat tudunk kiszámolni. A Java véletlenszerű-szám generátora is ezt használja.
             A polártanszformációs algoritmus két "véletlen" értéket generál. A megadott forrásokat összehasonlítva rájöhetünk, hogy a java kódja egyszerűbb és átláthatóbb.
         </para>
     </section>        
@@ -67,7 +67,7 @@
             Tanulságok, tapasztalatok, magyarázat...
         </para>
         <para>
-            Ez a feladat megegyezik az előző feladattal, különbség a bejárási mintában keresendő.
+           (Tutorom <link xlink:href="https://github.com/ratkudani">Ratku Dániel</link>) Ez a feladat megegyezik az előző feladattal, különbség a bejárási mintában keresendő.
             Míg az alapnak tekinthető Inorder (amely az előző feladatban is megoldásul szolgált) bejárási formálya a következő: Inorder (Left, Root, Right),
             addig a Posztorderé: Postorder (Left, Right, Root), valaint a Preorderé pedig: Preorder (Root, Left, Right).
             Forrás: <link xlink:href="https://www.geeksforgeeks.org/tree-traversals-inorder-preorder-and-postorder/">https://www.geeksforgeeks.org/tree-traversals-inorder-preorder-and-postorder/</link>
@@ -91,8 +91,9 @@
             Tanulságok, tapasztalatok, magyarázat...
         </para>
         <para>
-            A fát felépítő algoritmus megegyezik az előzővel, annyi az eltérés, hogy nem hívunk meg szokásos formát az építéshez,
-            hanem egyszerűen bele "shifteljük" az elemeket a fába.
+            Ezzel a megoldással is egy szokványos binfát építünk, viszont itt van egy fontos eltérés az előzőekhez képest, mégpedig itt a csomópont a gyökérbe van
+            ágyazva, ennek köszönhetően azt közvetlenül el tudjuk érni, mivel ezzel a csomóbont részévé vált a gyökérnek, viszont ez elvbeli különbséget nem von maga után.
+            Mivel a fának az elve megegyezik az előző feladatokkal, így ennek kifejtése megtalálható az előző feladatokban.
         </para>
     </section>        
                 
@@ -112,10 +113,11 @@
             Tanulságok, tapasztalatok, magyarázat...
         </para>
         <para>
-            Át kell állítsuk a gyökér létrehozását, a "Heapen" fogunk allokálni neki helyett a "Stack" helyett. Le kell, hogy vegyük az iniciliazálási
-            listát, mivel a Node konstruktora fog később lefutni.
-            Egyetlen utasítással kell bővítenünk a "desktruktort", mégpedig "delete gyoker" a felszabadítások végén.
+        Itt a Tree és a Node osztályok el vannak egymástól különítve, ennek köszönhetően a binfa működését úgy tudjuk megoldani,
+        hogy a gyökér tagból mutatót készítünk, majd ezt adjuk tovább a csomópontnak, majd így felépítjük a fát az összes új csomóponttal együtt. Különbségnek
+        róható fel az eredeti binfához képest az, hogy itt a gyökeret csak mutató segítségével tudjuk elérni.    
         </para>
+           
     </section>                     
 
     <section>
@@ -128,16 +130,19 @@
             Megoldás forrása:  
         </para>
         <para>
-            <link xlink:href="https://github.com/pkristof1999/prog1/tree/master/Feladatok/BinFa">Mozgató szemantika</link>
+            <link xlink:href="https://github.com/DonatPataki/University/tree/master/prog1/mozgato">Mozgató szemantika</link>
         </para>
         <para>
             Tanulságok, tapasztalatok, magyarázat...
         </para>
         <para>
-            Az előző feladatot alapul véve implementáljuk bele a mozgató és mozgató-értékadás alapú konstruktorokat.   
-            Mozgató konstruktornál "nullptr"-re állítjuk a BinFa gyökerét, majd erre a BinFára rávisszük az "other"
-            nevű fát, mely lényege, hogy a kapott "lvalue"-ból "rvalue"-t készít, így átvisszük az összes adatát az új fába,
-            ezért felszabadul az a memória, amelyet eddig foglalt és kiürül az "other".
+            (Tutorom <link xlink:href="https://github.com/DonatPataki">Pataki Donát</link>)
+            A mozgató szemantika/konstruktor azt teszi lehetővé, hogy egy tárgy értékeit áthelyezzük egy másikba. Binfánál lehetséges az, hogy egy kész binfát áthelyezzünk egy másikba,
+            viszont az eredeti fájl -amelyből ezt átraktuk- az üresen marad, mivel itt nem másolás, hanem áthelyezés történik. Viszont a másolással szemben
+            itt pozitívumnak róható fel az, hogy ez kevesebb erőforrást igényel, mintha készítenénk egy teljes másolatot az egészről.
+            Bár a 2011-es kiadású C++ verzió óta van beépített mozgató konstruktor is, annak a működése kifogásolható, ezért működését tudjuk deklarálni is.
+            A mozgató konstruktorhoz nagyon hasonlít a mozgató értékadás, ami akkor kerül meghívásra, ha egy tárgy már deklarálva lett, amelynek a későbbiekben szeretnénk értékét egy másikból áthelyezni,
+            konstruktornál pedig pedig meghívásra akkor kerül, amikor deklarációnál megadjuk az értékét.
         </para>
     </section>                     
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
