@@ -27,7 +27,7 @@
         <para>
             A program egy olyan négyzetes mátrix (négyzetes mátrix: sorainak és oszlopainak a száma megegyezik) alsó háromszögét számítja ki, 
             melynek a főátló felett kizárólag nulla áll. Maga a forrás lényegében a következő:
-            A program a memóriában 40 bájtot foglal le a malloc függvény segítségével, melyet a végén a free függvénnyel fel is fogunk szabadítani, 
+            A program a memóriában 40 bájtot foglal le a malloc függvény segítségével (amit kényszeríteni lehet, arra, hogy bármit visszaadjon, ellenekző esetben void*-ot ad), melyet a végén a free függvénnyel fel is fogunk szabadítani, 
             ami azért fontos, mert ha nem állna meg a program, akkor egy idő után betelne a számítógép memóriája. Majd megadjuk az 5 sorból álló alsóháromszögünket és 
             printf segítségével kiíratjuk a számokat.
         </para>      

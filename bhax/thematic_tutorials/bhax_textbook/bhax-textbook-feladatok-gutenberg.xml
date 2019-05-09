@@ -47,7 +47,9 @@ Blokk az a programrész, mely egy másik programrész belsejében helyezkedik el
             el nem éri a megadott paramétert a kód, egyszóval hamis lesz, a do-while ettől annyiban különbözik, hogy ott egyszer mindenképp lefut a ciklus. Ehhez nagyon hasonlít a for ciklus is, amely hasonló módon addig fut, amíg egy megadott kritériumot el nem ér.</para><para>
             A break utasítással kiléphetünk a while, a for vagy a do-while ciklusmagjából is, melyeket az ebben lévő continue paranccsal akár folytathatunk is. Az utolsó ilyen utasítás a goto, amellyel megadott pontra ugordhatunk,
             ami akkor előnyös, ha egymásba ágyazott ciklusokból szeretnénk kilépni.</para><para>
-            A C nyelvben tudunk összetett utasításokat is írni, melynek lényege, hogy több különböző utasítást egyetlen utasításként tud kezelni.
+            A C nyelvben tudunk összetett utasításokat is írni, melynek lényege, hogy több különböző utasítást egyetlen utasításként tud kezelni. Ha már utasításokról beszélünk, érdemes megemlíteni ezek néhány fajtáját is.
+            Ciklust meghatározó utasítások például az iterációs utasítások is, melyek a fentebb már említésre került for, do-while és while, vezérlésért felelős utasítások a következőek: goto, break, retrun, continue, melyek a vezérlés átadására feltétel nélkül képesek, valamint
+            még vannak az útválasztó utasítások is, mint a switch vagy az if.
         </para>
   
     </section>  

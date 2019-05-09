@@ -17,7 +17,10 @@
             Megoldás forrása:                
         </para>
         <para>
-            <link xlink:href="https://github.com/pkristof1999/prog1/tree/master/Feladatok/Polártranszformációs%20Algoritmus">Első osztályom (a mappa tartalmazza a java és a c++ forrásokat is)(Forrás: UDPROG)</link>
+            <link xlink:href="https://github.com/pkristof1999/prog1/blob/master/Feladatok/Polártranszformációs%20Algoritmus/polargen.cpp">Első osztályom (Forrás: UDPROG)</link>
+        </para>
+        <para>
+            <link xlink:href="https://github.com/pkristof1999/prog1/blob/master/Feladatok/Polártranszformációs%20Algoritmus">Mappa, ami tartalmazza a Java és a C++ forrásokat is (Forrás: UDPROG)</link>
         </para>
         <para>
             Tanulságok, tapasztalatok, magyarázat...
@@ -37,7 +40,7 @@
             Megoldás forrása:                
         </para>
         <para>
-            <link xlink:href="https://github.com/pkristof1999/prog1/tree/master/Feladatok/BinFa">LZW (Forrás: UDPROG)</link>
+            <link xlink:href="https://github.com/pkristof1999/prog1/tree/master/Feladatok/BinFa/z.c">LZW (Forrás: UDPROG)</link>
         </para>
         <para>
             Tanulságok, tapasztalatok, magyarázat...
@@ -61,7 +64,10 @@
             Megoldás forrása:                
         </para>
         <para>
-            <link xlink:href="https://github.com/pkristof1999/prog1/tree/master/Feladatok/BinFa">LZW (preorder/posztorder)(Forrás: UDPROG)</link>
+            <link xlink:href="https://github.com/pkristof1999/prog1/tree/master/Feladatok/BinFa/z_pre.c">LZW preorder (Forrás: UDPROG)</link>
+        </para>
+        <para>
+            <link xlink:href="https://github.com/pkristof1999/prog1/tree/master/Feladatok/BinFa/z_post.c">LZW postorder (Forrás: UDPROG)</link>
         </para>
         <para>
             Tanulságok, tapasztalatok, magyarázat...
@@ -85,7 +91,7 @@
             Megoldás forrása:                
         </para>
         <para>
-            <link xlink:href="https://github.com/pkristof1999/prog1/tree/master/Feladatok/BinFa">Tag a gyökér</link>
+            <link xlink:href="https://github.com/pkristof1999/prog1/blob/master/Feladatok/BinFa/tag.cpp">Tag a gyökér</link>
         </para>
         <para>
             Tanulságok, tapasztalatok, magyarázat...
@@ -107,7 +113,7 @@
             Megoldás forrása:  
         </para>
         <para>
-            <link xlink:href="https://github.com/pkristof1999/prog1/tree/master/Feladatok/BinFa">Mutató a gyökér</link>
+            <link xlink:href="https://github.com/pkristof1999/prog1/blob/master/Feladatok/BinFa/mutato.cpp">Mutató a gyökér</link>
         </para>
         <para>
             Tanulságok, tapasztalatok, magyarázat...
@@ -130,7 +136,7 @@
             Megoldás forrása:  
         </para>
         <para>
-            <link xlink:href="https://github.com/DonatPataki/University/tree/master/prog1/mozgato">Mozgató szemantika</link>
+            <link xlink:href="https://github.com/pkristof1999/prog1/blob/master/Feladatok/BinFa/z3a9.cpp">Mozgató szemantika</link>
         </para>
         <para>
             Tanulságok, tapasztalatok, magyarázat...
