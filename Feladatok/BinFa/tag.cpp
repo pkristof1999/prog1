@@ -132,3 +132,4 @@ main ()
     binFa.szabadit ();
 
     return 0;
+}
