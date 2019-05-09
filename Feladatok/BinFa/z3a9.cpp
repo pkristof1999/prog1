@@ -1,4 +1,4 @@
-//z3a9.cpp
+// z3a9.cpp
 //
 // Együtt támadjuk meg: http://progpater.blog.hu/2011/04/14/egyutt_tamadjuk_meg
 // LZW fa építő 3. C++ átirata a C valtozatbol (+mélység, atlag és szórás)
